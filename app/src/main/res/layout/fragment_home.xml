@@ -11,8 +11,34 @@
         android:orientation="vertical">
 
         <include layout="@layout/popular_billiards"/>
-
+        <include layout="@layout/search_billiards"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="Prestigious locations"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
         <include layout="@layout/expensive_billiards"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="Collection"
+            android:textStyle="bold"
+            android:textSize="25dp"
+       />
+        <include layout="@layout/collection_home"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="Place Challenge"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+        <include layout="@layout/place_home"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textStyle="bold" />
+
 
     </LinearLayout>
 
