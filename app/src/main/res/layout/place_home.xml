@@ -2,63 +2,121 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:stretchColumns="*">
 
         <TableRow android:layout_height="50dp">
-                <Button android:text="Q1"
+                <com.google.android.material.button.MaterialButton android:text="Ha Noi"
                     android:layout_height="50dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginLeft="5dp"
                     android:textColor="@color/colorRed"
-                    android:background="@color/colorWhite"/>
-                <Button android:text="Q2"
+                    android:backgroundTint="@color/colorWhite"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeWidth="3dp"/>
+                <com.google.android.material.button.MaterialButton android:text="Hue"
                     android:layout_height="50dp"
                     android:background="@color/colorWhite"
                     android:layout_marginRight="5dp"
-                    android:textColor="@color/colorRed"/>
-                <Button android:text="Q3"
+                    android:textColor="@color/colorRed"
+                    android:backgroundTint="@color/colorWhite"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeWidth="3dp"/>
+                <com.google.android.material.button.MaterialButton android:text="Da Nang"
                     android:background="@color/colorWhite"
                     android:layout_height="50dp"
                     android:layout_marginRight="5dp"
-                    android:textColor="@color/colorRed"/>
+                    android:textColor="@color/colorRed"
+                    android:backgroundTint="@color/colorWhite"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeWidth="3dp"/>
 
         </TableRow>
         <TableRow android:layout_height="50dp">
 
-                <Button android:text="Q4"
+                <com.google.android.material.button.MaterialButton android:text="TP HCM"
                     android:background="@color/colorWhite"
-                    android:layout_height="50dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:textColor="@color/colorRed"/>
-                <Button android:text="Q5"
-                    android:layout_height="50dp"
-                    android:layout_marginRight="5dp"
-                    android:background="@color/colorWhite"
-                    android:textColor="@color/colorRed"/>
-                <Button android:text="Q6"
-                    android:layout_height="50dp"
-                    android:layout_marginRight="5dp"
-                    android:textColor="@color/colorRed" />
-        </TableRow>
-
-        <TableRow android:layout_height="50dp">
-                <Button android:text="Q7"
                     android:layout_height="50dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginLeft="5dp"
                     android:textColor="@color/colorRed"
-                    android:background="@color/colorWhite"/>
-                <Button android:text="Q8"
-                    android:layout_height="50dp"
-                    android:background="@color/colorWhite"
-                    android:layout_marginRight="5dp"
-                    android:textColor="@color/colorRed"/>
-                <Button android:text="Q9"
-                    android:background="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeWidth="3dp"/>
+                <com.google.android.material.button.MaterialButton android:text="Binh Duong"
                     android:layout_height="50dp"
                     android:layout_marginRight="5dp"
-                    android:textColor="@color/colorRed"/>
+                    android:background="@color/colorWhite"
+                    android:textColor="@color/colorRed"
+                    android:backgroundTint="@color/colorWhite"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeWidth="3dp"/>
+                <com.google.android.material.button.MaterialButton android:text="Da Lat"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/colorRed"
+                    android:backgroundTint="@color/colorWhite"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeWidth="3dp"/>
+        </TableRow>
 
+        <TableRow android:layout_height="50dp">
+                <com.google.android.material.button.MaterialButton
+                    android:text="Ca Mau"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorRed"
+                    android:backgroundTint="@color/colorWhite"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeWidth="3dp"/>
+                <com.google.android.material.button.MaterialButton
+                    android:text="Vung Tau"
+                    android:layout_height="50dp"
+                    android:background="@color/colorWhite"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/colorRed"
+                    android:backgroundTint="@color/colorWhite"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeWidth="3dp"/>
+                <com.google.android.material.button.MaterialButton android:text="Soc Trang"
+                    android:background="@color/colorWhite"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/colorRed"
+                    android:backgroundTint="@color/colorWhite"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeWidth="3dp"/>
+        </TableRow>
+        <TableRow android:layout_height="50dp">
+                <com.google.android.material.button.MaterialButton
+                    android:text="Bac Lieu"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorRed"
+                    android:backgroundTint="@color/colorWhite"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeWidth="3dp"/>
+                <com.google.android.material.button.MaterialButton
+                    android:text="Kien Giang"
+                    android:layout_height="50dp"
+                    android:background="@color/colorWhite"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/colorRed"
+                    android:backgroundTint="@color/colorWhite"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeWidth="3dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:text="Bac Ninh"
+                    android:background="@color/colorWhite"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/colorRed"
+                    android:backgroundTint="@color/colorWhite"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeWidth="3dp"
+                    />
         </TableRow>
 </TableLayout>

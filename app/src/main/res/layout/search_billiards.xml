@@ -24,6 +24,6 @@
         android:layout_alignTop="@+id/edtSearch"
         android:layout_alignBottom="@+id/edtSearch"
         android:layout_alignRight="@+id/edtSearch"
-        android:background="@drawable/rounded_button"/>
+        style="@style/AppTheme.RoundedCornerMaterialButton" />
 
 </RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/edtGo"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="@string/give_us_your_rate"
+            android:paddingTop="15dp"
+            android:paddingLeft="70dp"
+            android:textSize="25dp"
+            android:editable="false"
+            android:textColor="@color/colorPrimary"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSearch"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="@string/go"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/edtGo"
+            android:layout_alignBottom="@+id/edtGo"
+            android:layout_alignRight="@+id/edtGo"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="@color/colorPrimary"
+
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/footer_image"
+        android:scaleType="centerCrop"/>
+
+</LinearLayout>
