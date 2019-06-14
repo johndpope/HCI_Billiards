@@ -19,4 +19,7 @@
     <string name="menu_send">Send</string>
     <string name="give_us_your_rate">Give us your rate</string>
     <string name="go">Go</string>
+    <string name="t_b_n">Đặt Bàn</string>
+    <string name="t_t_c">Tất cả</string>
+    <string name="uy_t_n">Uy tín</string>
 </resources>

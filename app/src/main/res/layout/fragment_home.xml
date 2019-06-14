@@ -34,6 +34,12 @@
             android:textStyle="bold"
             android:textSize="25dp"/>
         <include layout="@layout/place_home"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorBlack"
+            />
         <include layout="@layout/footer"/>
         <TextView
             android:layout_width="fill_parent"
