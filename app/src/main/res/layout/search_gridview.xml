@@ -17,7 +17,9 @@
             android:textColor="@color/colorRed"
             android:backgroundTint="@color/colorWhite"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            app:strokeWidth="2dp"/>
+            app:strokeWidth="2dp"
+            android:id="@id/btnSearchHeader"
+            android:onClick="clickToViewListBtnHeader"/>
         <com.google.android.material.button.MaterialButton android:text="Máy lanh"
             android:layout_height="60dp"
             android:textSize="12dp"
@@ -26,7 +28,9 @@
             android:textColor="@color/colorRed"
             android:backgroundTint="@color/colorWhite"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            app:strokeWidth="2dp"/>
+            app:strokeWidth="2dp"
+            android:id="@id/btnSearchHeader"
+            android:onClick="clickToViewListBtnHeader"/>
         <com.google.android.material.button.MaterialButton android:text="Bình dân"
             android:layout_height="60dp"
             android:background="@color/colorWhite"
@@ -36,7 +40,9 @@
             android:textColor="@color/colorRed"
             android:backgroundTint="@color/colorWhite"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            app:strokeWidth="2dp"/>
+            app:strokeWidth="2dp"
+            android:id="@id/btnSearchHeader"
+            android:onClick="clickToViewListBtnHeader"/>
         <com.google.android.material.button.MaterialButton android:text="Da Nang"
             android:background="@color/colorWhite"
             android:layout_height="60dp"
@@ -45,7 +51,9 @@
             android:textColor="@color/colorRed"
             android:backgroundTint="@color/colorWhite"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            app:strokeWidth="2dp"/>
+            app:strokeWidth="2dp"
+            android:id="@id/btnSearchHeader"
+            android:onClick="clickToViewListBtnHeader"/>
         </TableRow>
 
         <TableRow>
@@ -58,7 +66,9 @@
             android:textColor="@color/colorRed"
             android:backgroundTint="@color/colorWhite"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            app:strokeWidth="2dp"/>
+            app:strokeWidth="2dp"
+            android:id="@id/btnSearchHeader"
+            android:onClick="clickToViewListBtnHeader"/>
         <com.google.android.material.button.MaterialButton android:text="Gợi ý"
             android:layout_height="60dp"
             android:layout_marginRight="5dp"
@@ -68,7 +78,9 @@
             android:textColor="@color/colorRed"
             android:backgroundTint="@color/colorWhite"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            app:strokeWidth="2dp"/>
+            app:strokeWidth="2dp"
+            android:id="@id/btnSearchHeader"
+            android:onClick="clickToViewListBtnHeader"/>
         <com.google.android.material.button.MaterialButton android:text="Da Lat"
             android:layout_height="60dp"
             android:layout_marginRight="5dp"
@@ -77,7 +89,9 @@
             android:textStyle="italic"
             android:backgroundTint="@color/colorWhite"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            app:strokeWidth="2dp"/>
+            app:strokeWidth="2dp"
+            android:id="@id/btnSearchHeader"
+            android:onClick="clickToViewListBtnHeader"/>
         <com.google.android.material.button.MaterialButton
             android:text="Vung Tau"
             android:layout_height="60dp"
@@ -87,6 +101,8 @@
             android:textStyle="italic"
             android:backgroundTint="@color/colorWhite"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            app:strokeWidth="2dp"/>
+            app:strokeWidth="2dp"
+            android:id="@+id/btnSearchHeader"
+            android:onClick="clickToViewListBtnHeader"/>
         </TableRow>
 </TableLayout>

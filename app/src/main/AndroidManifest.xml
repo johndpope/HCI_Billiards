@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".expensive_activity"></activity>
+        <activity android:name=".BookTable" />
+        <activity android:name=".BilliardDetail" />
+        <activity android:name=".ListBilliards" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

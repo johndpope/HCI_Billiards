@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SearchFragment">
+    tools:context=".ListBilliards">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <EditText
+        <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="  Tìm kiếm tiệm Billiard"/>
-        <include layout="@layout/search_gridview"/>
-        <include layout="@layout/diemdenuytin"/>
+            android:layout_height="1dp"
+            android:background="@color/colorBlack"
+            />
+        <include layout="@layout/near_me_list"/>
 
-        <include layout="@layout/xuhuonghiennay"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textStyle="bold" />
 
-
-        <include layout="@layout/hot_nofitication" />
     </LinearLayout>
+
 </ScrollView>

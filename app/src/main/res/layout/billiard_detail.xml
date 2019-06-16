@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/expensive_billiard1"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Billiard Group 1 - FPT University"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số 814A Nguyễn Văn Qúa, P. Đông Hưng Thuận, Q. 12"
+        android:gravity="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colarPrimaryLight"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giờ mở cửa: "
+            android:textColor="@color/colorRed"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8:00 - 23:00 "/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/colarPrimaryLight"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingRight="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loại hình"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Billiard 3 băng \n Billiard lỗ"
+                android:textColor="@color/colorRed"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/colorGreen"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loại hình"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Billiard 3 băng \n Billiard lỗ"
+                android:textColor="@color/colorRed"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Lợi ích khi đặt bàn từ HCI_Billiard"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:background="@color/colorXam"
+        android:textSize="15dp"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Đặt bàn HCI_Billiard: Tư vấn - Giữ chỗ"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Uư đãi tặng kèm :"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:gravity="center_vertical"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/colarPrimaryLight"
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+        <TableRow>
+            <TextView android:textSize="15dp"
+                android:text="Sản phẩm"
+                android:gravity="center"/>
+            <TextView android:textSize="15dp"
+                android:text="Uư đãi"/>
+            <TextView android:textSize="15dp"
+                android:text="Áp dụng"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:textSize="15dp"
+                android:text="Combo nước"
+                android:gravity="center"/>
+            <TextView android:textSize="15dp"
+                android:text="-50% bill nước"/>
+            <TextView android:textSize="15dp"
+                android:text="T2 đến T6"/>
+        </TableRow>
+        <TableRow >
+            <TextView android:textSize="15dp"
+                android:text="Combo đồ ăn"
+                android:gravity="center"/>
+            <TextView android:textSize="15dp"
+                android:text="-20% bill đồ ăn"/>
+            <TextView android:textSize="15dp"
+                android:text="T2 đến T6"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:textSize="15dp"
+                android:text="Combo giờ chơi"
+                android:gravity="center"/>
+            <TextView android:textSize="15dp"
+                android:text="-10% bill giờ cơi"/>
+            <TextView android:textSize="15dp"
+                android:text="T2 đến T6"/>
+        </TableRow>
+    </TableLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/colarPrimaryLight"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Lưu ý :"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Uư đãi không áp dụng vào các ngày lẽ và cuối tuần"
+        android:textColor="@color/colorBlack"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Quán quy định không mang thức ăn, nước uống từ ngoài vào"
+        android:textColor="@color/colorBlack"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Uư đãi chỉ áp dụng khi sử dụng dịch vụ tại quán"
+        android:textColor="@color/colorBlack"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Thông tin tóm tắt"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:background="@color/colorXam"
+        android:textSize="15dp"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PHÙ HỢP:"
+        android:textSize="12dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gia đình, bạn bè, đồng nghiệp..."
+        android:textColor="@color/colorBlack"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THỂ LOẠI:"
+        android:textSize="12dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Billiard băng, billiard lỗ."
+        android:textColor="@color/colorBlack"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KHÔNG GIAN:"
+        android:textSize="12dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- 8 bàn\n - Sức chứa: 50 khách"
+        android:textColor="@color/colorBlack"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHỖ ĐỂ XE:"
+        android:textSize="12dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Để xe trước cửa quán (Miễn phí)"
+        android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+</ScrollView>

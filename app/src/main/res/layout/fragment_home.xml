@@ -15,14 +15,14 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="30dp"
-            android:text="Prestigious locations"
+            android:text="Điểm đến uy tín"
             android:textStyle="bold"
             android:textSize="25dp"/>
         <include layout="@layout/expensive_billiards"/>
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="30dp"
-            android:text="Collection"
+            android:text="Điểm đến mới nhất"
             android:textStyle="bold"
             android:textSize="25dp"
        />
@@ -30,7 +30,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="30dp"
-            android:text="Place Challenge"
+            android:text="Địa điểm thách đấu"
             android:textStyle="bold"
             android:textSize="25dp"/>
         <include layout="@layout/place_home"/>

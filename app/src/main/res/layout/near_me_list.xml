@@ -24,7 +24,10 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/expensive_billiard1" />
+                android:src="@drawable/expensive_billiard1"
+                android:clickable="true"
+                android:id="@+id/imgDetail"
+                android:onClick="clicktoviewdetailByNear"/>
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
@@ -74,7 +77,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/t_b_n"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:id="@+id/btnDatBan"
+                android:onClick="clickToDatBan"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -99,7 +104,10 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/expensive_billiard1" />
+                android:src="@drawable/expensive_billiard1"
+                android:clickable="true"
+                android:id="@id/imgDetail"
+                android:onClick="clicktoviewdetailByNear"/>
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
@@ -149,7 +157,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/t_b_n"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:id="@id/btnDatBan"
+                android:onClick="clickToDatBan"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -173,7 +183,10 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/expensive_billiard1" />
+                android:src="@drawable/expensive_billiard1"
+                android:clickable="true"
+                android:id="@id/imgDetail"
+                android:onClick="clicktoviewdetailByNear"/>
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
@@ -223,7 +236,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/t_b_n"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:id="@id/btnDatBan"
+                android:onClick="clickToDatBan"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -247,7 +262,10 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/expensive_billiard1" />
+                android:src="@drawable/expensive_billiard1"
+                android:id="@id/imgDetail"
+                android:clickable="true"
+                android:onClick="clicktoviewdetailByNear"/>
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
@@ -297,7 +315,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/t_b_n"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:id="@id/btnDatBan"
+                android:onClick="clickToDatBan"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -322,7 +342,10 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/expensive_billiard1" />
+                android:src="@drawable/expensive_billiard1"
+                android:id="@id/imgDetail"
+                android:clickable="true"
+                android:onClick="clicktoviewdetailByNear"/>
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
@@ -372,7 +395,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/t_b_n"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:id="@id/btnDatBan"
+                android:onClick="clickToDatBan"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -396,7 +421,10 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/expensive_billiard1" />
+                android:src="@drawable/expensive_billiard1"
+                android:id="@id/imgDetail"
+                android:clickable="true"
+                android:onClick="clicktoviewdetailByNear"/>
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
@@ -446,7 +474,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/t_b_n"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:id="@id/btnDatBan"
+                android:onClick="clickToDatBan"/>
         </LinearLayout>
     </LinearLayout>
 

@@ -8,8 +8,13 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -73,10 +78,54 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         return false;
+    }
+
+    public void clicktoview(View view) {
+        ImageView imageViewHomeFragment = findViewById(R.id.btnPopular);
+        Intent intent =new Intent(MainActivity.this,ListBilliards.class);
+        startActivity(intent);
+    }
+
+
+    public void clickToViewList(View view) {
+        Button button = findViewById(R.id.btnPlaceChallenge);
+        Intent intent = new Intent(MainActivity.this, ListBilliards.class);
+        startActivity(intent);
+    }
+
+    public void clicktoviewdetail(View view) {
+        ImageView imageViewDetail = findViewById(R.id.imgExpensive);
+        Intent intent = new Intent(this,BilliardDetail.class);
+        startActivity(intent);
+    }
+
+    public void clickToviewListByTxt(View view) {
+        TextView textView = findViewById(R.id.txtDiemDenUyTin);
+        Intent intent = new Intent(MainActivity.this, ListBilliards.class);
+        startActivity(intent);
+    }
+
+    public void clickToviewListByTxtXuHuong(View view) {
+        TextView textView = findViewById(R.id.txtXuhuonghiennay);
+        Intent intent = new Intent(MainActivity.this, ListBilliards.class);
+        startActivity(intent);
+    }
+
+    public void clickToViewListBtnHeader(View view) {
+        Button button = findViewById(R.id.btnSearchHeader);
+        Intent intent = new Intent(MainActivity.this, ListBilliards.class);
+        startActivity(intent);
+    }
+
+    public void clickToViewListByHeaderNear(View view) {
+        Button button = findViewById(R.id.btnHeaderNear);
+        Intent intent = new Intent(this, ListBilliards.class);
+        startActivity(intent);
     }
 }

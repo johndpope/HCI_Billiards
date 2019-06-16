@@ -31,7 +31,9 @@
             android:layout_height="50dp"
             android:text="Bình dân"
             android:textSize="18dp"
-            android:gravity="center_vertical"/>
+            android:gravity="center_vertical"
+            android:id="@id/txtXuhuonghiennay"
+            android:onClick="clickToviewListByTxtXuHuong"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -40,9 +42,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Bình dân"
+            android:text="Máy lạnh"
             android:textSize="18dp"
-            android:gravity="center_vertical"/>
+            android:gravity="center_vertical"
+            android:id="@id/txtXuhuonghiennay"
+            android:onClick="clickToviewListByTxtXuHuong"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -51,9 +55,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Bình dân"
+            android:text="Sang trọng"
             android:textSize="18dp"
-            android:gravity="center_vertical"/>
+            android:gravity="center_vertical"
+            android:id="@id/txtXuhuonghiennay"
+            android:onClick="clickToviewListByTxtXuHuong"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -62,9 +68,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Bình dân"
+            android:text="Khu liên hợp giải trí"
             android:textSize="18dp"
-            android:gravity="center_vertical"/>
+            android:gravity="center_vertical"
+            android:id="@id/txtXuhuonghiennay"
+            android:onClick="clickToviewListByTxtXuHuong"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -73,20 +81,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Bình dân"
+            android:text="Giảm giá HOT"
             android:textSize="18dp"
-            android:gravity="center_vertical"/>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/colorBlack"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Bình dân"
-            android:textSize="18dp"
-            android:gravity="center_vertical"/>
+            android:gravity="center_vertical"
+            android:id="@+id/txtXuhuonghiennay"
+            android:onClick="clickToviewListByTxtXuHuong"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
