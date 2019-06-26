@@ -10,10 +10,10 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="  Tìm kiếm tiệm Billiard"/>
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="  Tìm kiếm tiệm Billiard"/>-->
         <include layout="@layout/search_gridview"/>
         <include layout="@layout/diemdenuytin"/>
 

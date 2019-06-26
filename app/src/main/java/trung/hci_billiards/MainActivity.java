@@ -128,4 +128,16 @@ public class MainActivity extends AppCompatActivity
         Intent intent = new Intent(this, ListBilliards.class);
         startActivity(intent);
     }
+
+    public void clicktoviewdetailByNear(View view) {
+        ImageView imageView = findViewById(R.id.imgDetail);
+        Intent intent = new Intent(this, BilliardDetail.class);
+        startActivity(intent);
+    }
+
+    public void clickToDatBan(View view) {
+        Button button = findViewById(R.id.btnDatBan);
+        Intent intent = new Intent(this, BookTable.class);
+        startActivity(intent);
+    }
 }

@@ -9,16 +9,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-        <include layout="@layout/popular_billiards"/>
         <include layout="@layout/search_billiards"/>
+        <include layout="@layout/popular_billiards"/>
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="30dp"
-            android:text="Điểm đến uy tín"
+            android:text="Điểm đến gần nhất"
             android:textStyle="bold"
             android:textSize="25dp"/>
-        <include layout="@layout/expensive_billiards"/>
+        <include layout="@layout/diemdengannhat"/>
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="30dp"

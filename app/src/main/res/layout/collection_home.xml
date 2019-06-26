@@ -106,7 +106,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/expensive_billiard4" />
+            android:src="@drawable/expensive_billiard3" />
 
         <TextView
             android:layout_width="match_parent"
@@ -134,7 +134,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/expensive_billiard5" />
+            android:src="@drawable/expensive_billiard1" />
 
         <TextView
             android:layout_width="match_parent"
