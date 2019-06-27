@@ -2,11 +2,11 @@
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:columnCount="2">
+    android:columnCount="3">
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_height="120dp"
         android:layout_columnWeight="1"
         android:layout_gravity="fill_horizontal"
         android:gravity="center"
@@ -14,27 +14,28 @@
         android:padding="4dp">
 
         <ImageView
-            android:clickable="true"
-            android:onClick="clicktoview"
-            android:id="@id/imgExpensive"
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="100dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/expensive_billiard1" />
+            android:src="@drawable/expensive_billiard1"
+            android:id="@+id/imgExpensive"
+            android:clickable="true"
+            android:onClick="clicktoviewdetail"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:text="expensive billiard 1"
-            android:textColor="@color/colorBlack" />
+            android:textColor="@color/colorBlack"
+            android:gravity="center"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_height="120dp"
         android:layout_columnWeight="1"
         android:layout_gravity="fill_horizontal"
         android:gravity="center"
@@ -43,10 +44,10 @@
 
         <ImageView
             android:clickable="true"
-            android:onClick="clicktoview"
+            android:onClick="clicktoviewdetail"
             android:id="@id/imgExpensive"
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="100dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
@@ -56,13 +57,14 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:text="expensive billiard 2"
-            android:textColor="@color/colorBlack" />
+            android:textColor="@color/colorBlack"
+            android:gravity="center"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_height="120dp"
         android:layout_columnWeight="1"
         android:layout_gravity="fill_horizontal"
         android:gravity="center"
@@ -71,10 +73,10 @@
 
         <ImageView
             android:clickable="true"
-            android:onClick="clicktoview"
+            android:onClick="clicktoviewdetail"
             android:id="@id/imgExpensive"
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="100dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
@@ -84,13 +86,14 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:text="expensive billiard 3"
-            android:textColor="@color/colorBlack" />
+            android:textColor="@color/colorBlack"
+            android:gravity="center"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_height="120dp"
         android:layout_columnWeight="1"
         android:layout_gravity="fill_horizontal"
         android:gravity="center"
@@ -99,10 +102,39 @@
 
         <ImageView
             android:clickable="true"
-            android:onClick="clicktoview"
+            android:onClick="clicktoviewdetail"
             android:id="@id/imgExpensive"
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/expensive_billiard2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="expensive billiard 4"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <ImageView
+            android:clickable="true"
+            android:onClick="clicktoviewdetail"
+            android:id="@id/imgExpensive"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
@@ -111,42 +143,15 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:text="expensive billiard 4"
-            android:textColor="@color/colorBlack" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="150dp"
-        android:layout_columnWeight="1"
-        android:layout_gravity="fill_horizontal"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="4dp">
-
-        <ImageView
-            android:clickable="true"
-            android:onClick="clicktoview"
-            android:id="@id/imgExpensive"
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/expensive_billiard1" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
             android:text="expensive billiard 5"
-            android:textColor="@color/colorBlack" />
+            android:textColor="@color/colorBlack"
+            android:gravity="center"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_height="120dp"
         android:layout_columnWeight="1"
         android:layout_gravity="fill_horizontal"
         android:gravity="center"
@@ -155,10 +160,10 @@
 
         <ImageView
             android:clickable="true"
-            android:onClick="clicktoview"
+            android:onClick="clicktoviewdetail"
             android:id="@id/imgExpensive"
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="100dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
@@ -168,7 +173,8 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:text="expensive billiard 6"
-            android:textColor="@color/colorBlack" />
+            android:textColor="@color/colorBlack"
+            android:gravity="center"/>
 
     </LinearLayout>
 

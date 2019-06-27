@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".expensive_activity"></activity>
+        <activity android:name=".GoiYChoBan"></activity>
+        <activity android:name=".DatBan" />
+        <activity android:name=".expensive_activity" />
         <activity android:name=".BookTable" />
         <activity android:name=".BilliardDetail" />
         <activity android:name=".ListBilliards" />

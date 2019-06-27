@@ -19,7 +19,7 @@ public class ListBilliards extends AppCompatActivity {
 
     public void clickToDatBan(View view) {
         Button button = findViewById(R.id.btnDatBan);
-        Intent intent = new Intent(this, BookTable.class);
+        Intent intent = new Intent(this, DatBan.class);
         startActivity(intent);
     }
 

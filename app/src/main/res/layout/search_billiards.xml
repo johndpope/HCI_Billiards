@@ -2,14 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="fill_parent"
     android:layout_height="40dp"
-    android:paddingTop="10dp">
+    android:paddingTop="10dp"
+    android:gravity="center">
 
 
     <TextView
         android:id="@+id/edtSearch"
         android:layout_width="fill_parent"
         android:layout_height="45dp"
-        android:text="2 người | 01//01/2019"
+        android:text="Bộ lọc"
         android:gravity="center"
         android:textSize="18dp"
         android:background="@drawable/radius"
@@ -20,7 +21,7 @@
         android:src="@drawable/ic_search_black_24dp"
         android:layout_alignTop="@+id/edtSearch"
         android:layout_alignBottom="@+id/edtSearch"
-        android:paddingLeft="80dp"
+        android:paddingLeft="150dp"
 
 
         />

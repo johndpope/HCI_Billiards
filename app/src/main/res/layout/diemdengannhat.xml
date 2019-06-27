@@ -2,179 +2,351 @@
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:columnCount="3">
+    android:columnCount="2">
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_gravity="fill_horizontal"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="4dp">
+        android:paddingLeft="10dp"
+        android:paddingRight="3dp"
+        android:layout_marginBottom="10dp">
 
         <ImageView
+            android:clickable="true"
+            android:onClick="clickToDatBanImg"
+            android:id="@+id/imgDiemDenGanNhat"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="110dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/expensive_billiard1"
-            android:id="@+id/imgExpensive"
-            android:clickable="true"
-            android:onClick="clicktoviewdetail"/>
+            android:src="@drawable/expensive_billiard1" />
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="expensive billiard 1"
-            android:textColor="@color/colorBlack"
-            android:gravity="center"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Billiard HCI Assignment -\nQuận 12 Tô Ký"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_access_time_black_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 phút nữa - 3.3 km"
+                    android:textColor="@color/colorBlack"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đặt bàn HCI ưu đãi đến 20%"
+                android:textColor="@color/colorRed"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
+
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_gravity="fill_horizontal"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="4dp">
+        android:paddingLeft="3dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="10dp">
 
         <ImageView
             android:clickable="true"
-            android:onClick="clicktoviewdetail"
-            android:id="@id/imgExpensive"
+            android:onClick="clickToDatBanImg"
+            android:id="@id/imgDiemDenGanNhat"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/expensive_billiard2" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="expensive billiard 2"
-            android:textColor="@color/colorBlack"
-            android:gravity="center"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="120dp"
-        android:layout_columnWeight="1"
-        android:layout_gravity="fill_horizontal"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="4dp">
-
-        <ImageView
-            android:clickable="true"
-            android:onClick="clicktoviewdetail"
-            android:id="@id/imgExpensive"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/expensive_billiard3" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="expensive billiard 3"
-            android:textColor="@color/colorBlack"
-            android:gravity="center"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="120dp"
-        android:layout_columnWeight="1"
-        android:layout_gravity="fill_horizontal"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="4dp">
-
-        <ImageView
-            android:clickable="true"
-            android:onClick="clicktoviewdetail"
-            android:id="@id/imgExpensive"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="110dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
             android:src="@drawable/expensive_billiard2" />
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="expensive billiard 4"
-            android:textColor="@color/colorBlack"
-            android:gravity="center"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Billiard HCI Assignment -\nQuận 12 Tô Ký"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_access_time_black_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 phút nữa - 3.3 km"
+                    android:textColor="@color/colorBlack"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đặt bàn HCI ưu đãi đến 20%"
+                android:textColor="@color/colorRed"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_gravity="fill_horizontal"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="4dp">
+        android:paddingLeft="10dp"
+        android:paddingRight="3dp"
+        android:layout_marginBottom="10dp">
 
         <ImageView
             android:clickable="true"
-            android:onClick="clicktoviewdetail"
-            android:id="@id/imgExpensive"
+            android:onClick="clickToDatBanImg"
+            android:id="@id/imgDiemDenGanNhat"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="110dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
             android:src="@drawable/expensive_billiard3" />
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="expensive billiard 5"
-            android:textColor="@color/colorBlack"
-            android:gravity="center"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Billiard HCI Assignment -\nQuận 12 Tô Ký"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_access_time_black_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 phút nữa - 3.3 km"
+                    android:textColor="@color/colorBlack"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đặt bàn HCI ưu đãi đến 20%"
+                android:textColor="@color/colorRed"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_gravity="fill_horizontal"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="4dp">
+        android:paddingLeft="3dp"
+        android:paddingRight="10dp">
 
         <ImageView
             android:clickable="true"
-            android:onClick="clicktoviewdetail"
-            android:id="@id/imgExpensive"
+            android:onClick="clickToDatBanImg"
+            android:id="@id/imgDiemDenGanNhat"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="110dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/expensive_billiard3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Billiard HCI Assignment -\nQuận 12 Tô Ký"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_access_time_black_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 phút nữa - 3.3 km"
+                    android:textColor="@color/colorBlack"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đặt bàn HCI ưu đãi đến 20%"
+                android:textColor="@color/colorRed"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="3dp">
+
+        <ImageView
+            android:clickable="true"
+            android:onClick="clickToDatBanImg"
+            android:id="@id/imgDiemDenGanNhat"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/expensive_billiard1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Billiard HCI Assignment -\nQuận 12 Tô Ký"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_access_time_black_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 phút nữa - 3.3 km"
+                    android:textColor="@color/colorBlack"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đặt bàn HCI ưu đãi đến 20%"
+                android:textColor="@color/colorRed"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="3dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:clickable="true"
+            android:onClick="clickToDatBanImg"
+            android:id="@id/imgDiemDenGanNhat"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
             android:src="@drawable/expensive_billiard6" />
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="expensive billiard 6"
-            android:textColor="@color/colorBlack"
-            android:gravity="center"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Billiard HCI Assignment -\nQuận 12 Tô Ký"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_access_time_black_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 phút nữa - 3.3 km"
+                    android:textColor="@color/colorBlack"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đặt bàn HCI ưu đãi đến 20%"
+                android:textColor="@color/colorRed"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
 
     </LinearLayout>
 

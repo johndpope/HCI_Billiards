@@ -14,25 +14,23 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="30dp"
-            android:text="Điểm đến gần nhất"
+            android:text="Điểm đến gần bạn"
             android:textStyle="bold"
-            android:textSize="25dp"/>
+            android:textSize="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
         <include layout="@layout/diemdengannhat"/>
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="30dp"
-            android:text="Điểm đến mới nhất"
+            android:text="Gợi ý cho bạn"
             android:textStyle="bold"
             android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
        />
-        <include layout="@layout/collection_home"/>
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="30dp"
-            android:text="Địa điểm thách đấu"
-            android:textStyle="bold"
-            android:textSize="25dp"/>
-        <include layout="@layout/place_home"/>
+        <include layout="@layout/activity_goi_ycho_ban"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"

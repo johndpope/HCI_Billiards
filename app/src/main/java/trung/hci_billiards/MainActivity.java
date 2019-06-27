@@ -99,11 +99,11 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
-    public void clicktoviewdetail(View view) {
-        ImageView imageViewDetail = findViewById(R.id.imgExpensive);
-        Intent intent = new Intent(this,BilliardDetail.class);
-        startActivity(intent);
-    }
+//    public void clicktoviewdetail(View view) {
+//        ImageView imageViewDetail = findViewById(R.id.imgExpensive);
+//        Intent intent = new Intent(this,BilliardDetail.class);
+//        startActivity(intent);
+//    }
 
     public void clickToviewListByTxt(View view) {
         TextView textView = findViewById(R.id.txtDiemDenUyTin);
@@ -137,7 +137,13 @@ public class MainActivity extends AppCompatActivity
 
     public void clickToDatBan(View view) {
         Button button = findViewById(R.id.btnDatBan);
-        Intent intent = new Intent(this, BookTable.class);
+        Intent intent = new Intent(this, DatBan.class);
+        startActivity(intent);
+    }
+
+    public void clickToDatBanImg(View view) {
+        ImageView imageView =findViewById(R.id.imgDiemDenGanNhat);
+        Intent intent = new Intent(this,DatBan.class);
         startActivity(intent);
     }
 }
