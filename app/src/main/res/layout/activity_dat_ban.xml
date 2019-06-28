@@ -124,18 +124,19 @@
                     android:layout_height="wrap_content"
                     android:text="-10%"
                     android:layout_marginLeft="20dp"
-                    android:textColor="@color/colorBlack"
+                    android:textColor="@color/colorRed"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="110dp"
             android:orientation="horizontal"
             android:background="@color/colorWhite"
             android:paddingLeft="10dp"
-            android:paddingTop="15dp">
+            android:paddingTop="15dp"
+            >
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
@@ -158,7 +159,7 @@
                     android:layout_height="wrap_content"
                     android:text="-10%"
                     android:layout_marginLeft="20dp"
-                    android:textColor="@color/colorBlack"
+                    android:textColor="@color/colorRed"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
             </LinearLayout>

@@ -17,6 +17,7 @@
             android:text="Điểm đến gần bạn"
             android:textStyle="bold"
             android:textSize="25dp"
+            android:textColor="@color/colorBlack"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"/>
