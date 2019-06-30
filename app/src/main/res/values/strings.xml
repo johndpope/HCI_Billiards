@@ -22,4 +22,5 @@
     <string name="t_b_n">Đặt Bàn</string>
     <string name="t_t_c">Tất cả</string>
     <string name="uy_t_n">Uy tín</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCFwA9cnjOicdvY84mpTEWtP-ll_niFRa8</string>
 </resources>

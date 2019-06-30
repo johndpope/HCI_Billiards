@@ -3,11 +3,13 @@ package trung.hci_billiards;
 
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 
 /**
@@ -15,6 +17,8 @@ import android.view.ViewGroup;
  */
 public class NearMeFragment extends Fragment {
 
+
+    Button changeAll;
 
     public static NearMeFragment newInstance() {
         NearMeFragment fragment = new NearMeFragment();

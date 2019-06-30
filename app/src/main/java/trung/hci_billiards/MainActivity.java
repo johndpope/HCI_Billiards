@@ -16,12 +16,19 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -55,6 +62,7 @@ public class MainActivity extends AppCompatActivity
 
     };
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,6 +86,7 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
 
     }
 
@@ -123,11 +132,6 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
-    public void clickToViewListByHeaderNear(View view) {
-        Button button = findViewById(R.id.btnHeaderNear);
-        Intent intent = new Intent(this, ListBilliards.class);
-        startActivity(intent);
-    }
 
     public void clicktoviewdetailByNear(View view) {
         ImageView imageView = findViewById(R.id.imgDetail);
@@ -146,4 +150,5 @@ public class MainActivity extends AppCompatActivity
         Intent intent = new Intent(this,DatBan.class);
         startActivity(intent);
     }
+
 }

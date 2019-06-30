@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,16 +11,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <include layout="@layout/gg_map"/>
 
        <include layout="@layout/header_neer_me"/>
 
-        <View
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/colorBlack"
-            />
-    <include layout="@layout/near_me_list"/>
-
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/nearMeChange"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <include layout="@layout/near_me_list"/>
+            </LinearLayout>
+        </ScrollView>
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="60dp"
@@ -28,4 +33,4 @@
 
     </LinearLayout>
 
-</ScrollView>
+</LinearLayout>
