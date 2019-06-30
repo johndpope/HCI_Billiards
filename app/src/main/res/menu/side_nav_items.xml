@@ -4,18 +4,24 @@
     tools:showIn="navigation_view">
 
     <item
-        android:id="@+id/side_nav_category"
-        android:icon="@drawable/baseline_category_24"
-        android:title="Category" />
-
-    <item
-        android:id="@+id/side_nav_account"
+        android:id="@+id/side_nav_trang_chu"
         android:icon="@drawable/baseline_account_box_24"
-        android:title="Account" />
+        android:title="Trang chủ" />
 
     <item
-        android:id="@+id/side_nav_setting"
+        android:id="@+id/side_nav_danh_muc"
+        android:icon="@drawable/baseline_account_box_24"
+        android:title="Danh mục" />
+
+
+    <item
+        android:id="@+id/side_nav_cai_dat"
         android:icon="@drawable/round_settings_24"
-        android:title="Setting" />
+        android:title="Cài đặt" />
+
+    <item
+        android:id="@+id/side_nav_dang_xuat"
+        android:icon="@drawable/baseline_account_box_24"
+        android:title="Đăng xuất" />
 
 </menu>
