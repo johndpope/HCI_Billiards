@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bglogin"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Billiards Booking"
+        android:textSize="45dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="70dp"
+        android:paddingTop="110dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:text="LOGIN WITH GOOGLE"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorRed"
+        app:icon="@drawable/google"
+        app:iconSize="30dp"
+        android:layout_gravity="center"
+        android:onClick="clickToHome"
+        android:id="@+id/btnLogin"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#3F51B5"
+        android:text="LOGIN WITH FACEBOOK"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:icon="@drawable/facebook"
+        app:iconSize="30dp"
+        android:id="@id/btnLogin"
+        android:onClick="clickToHome"
+        />
+
+</LinearLayout>
