@@ -183,30 +183,46 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Billiard HCI Assignment -\nQuận 12 Tô Ký"
+                android:text="Billiard HCI Assignment - Gr1"
                 android:textColor="@color/colorBlack"
                 android:textStyle="bold"
+                android:gravity="center"
                 />
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_gravity="center">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:src="@drawable/ic_access_time_black_24dp"/>
+                    android:src="@drawable/ic_location_on_black_24dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="10 phút nữa - 3.3 km"
-                    android:textColor="@color/colorBlack"/>
+                    android:text="1230 Tô Ký, Quận 12" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_access_time_xam_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 phút nữa - 3.3 km" />
             </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Đặt bàn HCI ưu đãi đến 20%"
+                android:text="Giảm 10%"
                 android:textColor="@color/colorRed"
                 android:textSize="12dp"
+                android:gravity="center"
                 />
         </LinearLayout>
 
@@ -240,30 +256,47 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Billiard HCI Assignment -\nQuận 12 Tô Ký"
+                android:text="Billiard HCI Assignment - Gr1"
                 android:textColor="@color/colorBlack"
                 android:textStyle="bold"
                 />
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:paddingRight="10dp">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:src="@drawable/ic_access_time_black_24dp"/>
+                    android:src="@drawable/ic_location_on_black_24dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="10 phút nữa - 3.3 km"
-                    android:textColor="@color/colorBlack"/>
+                    android:text="1230 Tô Ký, Quận 12" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:paddingRight="10dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_access_time_xam_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 phút nữa - 3.3 km" />
             </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Đặt bàn HCI ưu đãi đến 20%"
+                android:text="Giảm 10%"
                 android:textColor="@color/colorRed"
                 android:textSize="12dp"
+                android:gravity="center"
                 />
         </LinearLayout>
 
@@ -297,30 +330,46 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Billiard HCI Assignment -\nQuận 12 Tô Ký"
+                android:text="Billiard HCI Assignment - Gr1"
                 android:textColor="@color/colorBlack"
                 android:textStyle="bold"
+                android:gravity="center"
                 />
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_gravity="center">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:src="@drawable/ic_access_time_black_24dp"/>
+                    android:src="@drawable/ic_location_on_black_24dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="10 phút nữa - 3.3 km"
-                    android:textColor="@color/colorBlack"/>
+                    android:text="1230 Tô Ký, Quận 12" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_access_time_xam_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 phút nữa - 3.3 km" />
             </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Đặt bàn HCI ưu đãi đến 20%"
+                android:text="Giảm 10%"
                 android:textColor="@color/colorRed"
                 android:textSize="12dp"
+                android:gravity="center"
                 />
         </LinearLayout>
 
@@ -354,30 +403,47 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Billiard HCI Assignment -\nQuận 12 Tô Ký"
+                android:text="Billiard HCI Assignment - Gr1"
                 android:textColor="@color/colorBlack"
                 android:textStyle="bold"
                 />
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:paddingRight="10dp">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:src="@drawable/ic_access_time_black_24dp"/>
+                    android:src="@drawable/ic_location_on_black_24dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="10 phút nữa - 3.3 km"
-                    android:textColor="@color/colorBlack"/>
+                    android:text="1230 Tô Ký, Quận 12" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:paddingRight="10dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_access_time_xam_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 phút nữa - 3.3 km" />
             </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Đặt bàn HCI ưu đãi đến 20%"
+                android:text="Giảm 10%"
                 android:textColor="@color/colorRed"
                 android:textSize="12dp"
+                android:gravity="center"
                 />
         </LinearLayout>
 
