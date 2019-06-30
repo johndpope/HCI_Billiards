@@ -108,11 +108,6 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
-//    public void clicktoviewdetail(View view) {
-//        ImageView imageViewDetail = findViewById(R.id.imgExpensive);
-//        Intent intent = new Intent(this,BilliardDetail.class);
-//        startActivity(intent);
-//    }
 
     public void clickToviewListByTxt(View view) {
         TextView textView = findViewById(R.id.txtDiemDenUyTin);

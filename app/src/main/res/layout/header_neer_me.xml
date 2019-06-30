@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:scrollbars="none"
-    android:layout_marginBottom="10dp"
+    android:orientation="horizontal"
+    android:gravity="center"
     >
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:orientation="horizontal">
         <com.google.android.material.button.MaterialButton
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="wrap_content"
@@ -17,22 +12,13 @@
             android:text="@string/t_t_c"
             android:layout_gravity="center"
             android:id="@+id/btnChangAll"
-            android:onClick="clickToViewListByHeaderNear"
             android:textSize="10dp"/>
         <com.google.android.material.button.MaterialButton
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Uy tín"
-
-            android:onClick="clickToViewListBtnHeader"
-            android:layout_gravity="center"
-            android:textSize="10dp"/>
-        <com.google.android.material.button.MaterialButton
-            style="@style/Widget.MaterialComponents.Button.TextButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="View đẹp"
+            android:id="@+id/btnGanBan"
+            android:text="Gần Bạn"
 
             android:onClick="clickToViewListBtnHeader"
             android:layout_gravity="center"
@@ -42,24 +28,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sang trọng"
-            android:onClick="clickToViewListBtnHeader"
             android:layout_gravity="center"
+            android:id="@+id/btnSangTrong"
             android:textSize="10dp"/>
         <com.google.android.material.button.MaterialButton
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Giảm giá"
+            android:text="Uư Đãi HOT"
+            android:id="@+id/btnUuDaiHot"
             android:layout_gravity="center"
-            android:onClick="clickToViewListBtnHeader"
             android:textSize="10dp"/>
-        <com.google.android.material.button.MaterialButton
-            style="@style/Widget.MaterialComponents.Button.TextButton"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:text="Khu lien hợp"
-            android:layout_gravity="center"
-            android:onClick="clickToViewListBtnHeader"
-            android:textSize="10dp"/>
-    </LinearLayout>
-</HorizontalScrollView>
+</LinearLayout>

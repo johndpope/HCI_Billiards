@@ -217,7 +217,9 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Đặt Bàn Ngay" />
+        android:text="Đặt Bàn Ngay"
+        android:textColor="@color/colorBlack"
+        android:backgroundTint="@color/colorWhite"/>
 
 
 </LinearLayout>
