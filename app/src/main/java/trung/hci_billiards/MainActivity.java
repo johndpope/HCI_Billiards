@@ -8,6 +8,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.app.Application;
+import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -15,6 +17,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -81,6 +84,9 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.drawer_navigation);
 
+
+
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
@@ -92,7 +98,31 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        return false;
+        Fragment selectedFragment = null;
+        switch (item.getItemId()){
+            case R.id.side_nav_dang_xuat:
+                Toast.makeText(this, "Đăng xuất thành công", Toast.LENGTH_SHORT).show();
+                finish();
+                break;
+
+//            case R.id.side_nav_trang_chu:
+//                selectedFragment = HomeFragment.newInstance();
+//                break;
+//
+//            case R.id.side_nav_danh_muc:
+//                selectedFragment = SearchFragment.newInstance();
+//                break;
+//
+//            case R.id.side_nav_cai_dat:
+//                selectedFragment = HomeFragment.newInstance();
+//                break;
+        }
+
+//        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+//        transaction.replace(R.id.frame_layout, selectedFragment);
+//        transaction.commit();
+
+        return true;
     }
 
     public void clicktoview(View view) {

@@ -4,15 +4,9 @@
     tools:showIn="navigation_view">
 
     <item
-        android:id="@+id/side_nav_trang_chu"
-        android:icon="@drawable/baseline_home_24"
-        android:title="Trang chủ" />
-
-    <item
-        android:id="@+id/side_nav_danh_muc"
-        android:icon="@drawable/baseline_category_24"
-        android:title="Danh mục" />
-
+        android:id="@+id/side_nav_thong_ton"
+        android:icon="@drawable/thongtintaikhoan"
+        android:title="Thông tin tài khoản" />
 
     <item
         android:id="@+id/side_nav_cai_dat"
@@ -22,6 +16,7 @@
     <item
         android:id="@+id/side_nav_dang_xuat"
         android:icon="@drawable/logout"
-        android:title="Đăng xuất" />
+        android:title="Đăng xuất"
+        />
 
 </menu>
