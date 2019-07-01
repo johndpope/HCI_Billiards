@@ -105,22 +105,22 @@ public class MainActivity extends AppCompatActivity
                 finish();
                 break;
 
-//            case R.id.side_nav_trang_chu:
-//                selectedFragment = HomeFragment.newInstance();
-//                break;
-//
-//            case R.id.side_nav_danh_muc:
-//                selectedFragment = SearchFragment.newInstance();
-//                break;
-//
-//            case R.id.side_nav_cai_dat:
-//                selectedFragment = HomeFragment.newInstance();
-//                break;
+            case R.id.side_nav_thong_ton:
+                selectedFragment = HomeFragment.newInstance();
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.frame_layout, selectedFragment);
+                transaction.commit();
+                break;
+
+            case R.id.side_nav_cai_dat:
+                selectedFragment = HomeFragment.newInstance();
+                FragmentTransaction transaction1 = getSupportFragmentManager().beginTransaction();
+                transaction1.replace(R.id.frame_layout, selectedFragment);
+                transaction1.commit();
+                break;
         }
 
-//        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-//        transaction.replace(R.id.frame_layout, selectedFragment);
-//        transaction.commit();
+
 
         return true;
     }

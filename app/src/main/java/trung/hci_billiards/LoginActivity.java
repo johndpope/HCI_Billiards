@@ -7,10 +7,11 @@ import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 
 import com.google.android.material.button.MaterialButton;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends FragmentActivity {
 
     MaterialButton btnLogin;
 
