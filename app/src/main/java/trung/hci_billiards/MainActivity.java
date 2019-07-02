@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.side_nav_thong_ton:
-                selectedFragment = HomeFragment.newInstance();
+                selectedFragment = new ThongTinNguoiDungFragment();
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.frame_layout, selectedFragment);
                 transaction.commit();
