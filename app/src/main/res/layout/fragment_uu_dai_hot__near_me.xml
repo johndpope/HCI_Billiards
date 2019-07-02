@@ -6,6 +6,6 @@
     android:orientation="vertical"
     tools:context=".UuDaiHot_NearMe">
 
-    <include layout="@layout/near_me_list"/>
+    <include layout="@layout/uudaihot_list"/>
 
 </LinearLayout>
