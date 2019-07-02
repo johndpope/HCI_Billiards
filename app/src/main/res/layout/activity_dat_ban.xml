@@ -216,7 +216,7 @@
                         <TextView
                             android:layout_width="250dp"
                             android:layout_height="35dp"
-                            android:text="Thứ hai\n17/06/2019"
+                            android:id="@+id/txtSetDate"
                             android:gravity="center"
                             />
                     </LinearLayout>
