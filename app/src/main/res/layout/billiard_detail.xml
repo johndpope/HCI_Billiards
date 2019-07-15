@@ -87,19 +87,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="10dp">
+            android:paddingLeft="10dp"
+            android:gravity="center">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Loại hình"/>
+                android:text="Khoảng gía"
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Billiard 3 băng \n Billiard lỗ"
+                android:text="20.000 - 55.000đ\nbàn/giờ"
                 android:textColor="@color/colorRed"
                 android:gravity="center"/>
         </LinearLayout>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="30dp"
@@ -141,36 +148,44 @@
                 android:text="Sản phẩm"
                 android:gravity="center"/>
             <TextView android:textSize="15dp"
-                android:text="Uư đãi"/>
+                android:text="Uư đãi"
+                android:gravity="center"/>
             <TextView android:textSize="15dp"
-                android:text="Áp dụng"/>
+                android:text="Áp dụng"
+                android:gravity="center"/>
         </TableRow>
         <TableRow>
             <TextView android:textSize="15dp"
                 android:text="Combo nước"
                 android:gravity="center"/>
             <TextView android:textSize="15dp"
-                android:text="-50% bill nước"/>
+                android:text="-50% bill nước"
+                android:gravity="center"/>
             <TextView android:textSize="15dp"
-                android:text="T2 đến T6"/>
+                android:text="T2 đến T6"
+                android:gravity="center"/>
         </TableRow>
         <TableRow >
             <TextView android:textSize="15dp"
                 android:text="Combo đồ ăn"
                 android:gravity="center"/>
             <TextView android:textSize="15dp"
-                android:text="-20% bill đồ ăn"/>
+                android:text="-20% bill đồ ăn"
+                android:gravity="center"/>
             <TextView android:textSize="15dp"
-                android:text="T2 đến T6"/>
+                android:text="T2 đến T6"
+                android:gravity="center"/>
         </TableRow>
         <TableRow>
             <TextView android:textSize="15dp"
                 android:text="Combo giờ chơi"
                 android:gravity="center"/>
             <TextView android:textSize="15dp"
-                android:text="-10% bill giờ cơi"/>
+                android:text="-10% bill giờ cơi"
+                android:gravity="center"/>
             <TextView android:textSize="15dp"
-                android:text="T2 đến T6"/>
+                android:text="T2 đến T6"
+                android:gravity="center"/>
         </TableRow>
     </TableLayout>
     <View
@@ -252,5 +267,6 @@
         android:layout_height="wrap_content"
         android:text="- Để xe trước cửa quán (Miễn phí)"
         android:textColor="@color/colorBlack"/>
+    </LinearLayout>
     </LinearLayout>
 </ScrollView>

@@ -12,6 +12,7 @@ import android.app.Application;
 import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +20,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -28,6 +31,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
+import com.vorlonsoft.android.rate.AppRate;
+import com.vorlonsoft.android.rate.OnClickButtonListener;
+import com.vorlonsoft.android.rate.StoreType;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -70,6 +76,13 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button den = findViewById(R.id.btnDen);
+
+
+
+
+
 
         BottomNavigationView bottom_navigation = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottom_navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
@@ -176,4 +189,33 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
+    public void rate(View view) {
+        AppRate.with(MainActivity.this).setStoreType(StoreType.GOOGLEPLAY)
+
+                .setInstallDays((byte) 0) // default 10, 0 means install day
+                .setLaunchTimes((byte) 3) // default 10
+                .setRemindInterval((byte) 2) // default 1
+                .setRemindLaunchTimes((byte) 2) // default 1 (each launch)
+                .setShowLaterButton(true) // default true
+                .setDebug(false) // default false
+                //Java 8+: .setOnClickButtonListener(which -> Log.d(MainActivity.class.getName(), Byte.toString(which)))
+                .setOnClickButtonListener(new OnClickButtonListener() { // callback listener.
+                    @Override
+                    public void onClickButton(byte which) {
+                        Log.d(MainActivity.class.getName(), Byte.toString(which));
+                    }
+                })
+                .monitor();
+
+        if (AppRate.with(MainActivity.this).getStoreType() == StoreType.GOOGLEPLAY) {
+            //Check that Google Play is available
+            if (GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(MainActivity.this) != ConnectionResult.SERVICE_MISSING) {
+                // Show a dialog if meets conditions
+                AppRate.showRateDialogIfMeetsConditions(MainActivity.this);
+            }
+        } else {
+            // Show a dialog if meets conditions
+            AppRate.showRateDialogIfMeetsConditions(MainActivity.this);
+        }
+    }
 }

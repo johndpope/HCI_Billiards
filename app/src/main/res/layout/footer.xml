@@ -29,7 +29,8 @@
 
             />
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnSearch"
+            android:id="@+id/btnDen"
+            android:onClick="rate"
             android:layout_width="100dp"
             android:layout_height="40dp"
             android:text="@string/go"
