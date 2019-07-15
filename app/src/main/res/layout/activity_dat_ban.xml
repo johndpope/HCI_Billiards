@@ -249,7 +249,7 @@
                             android:layout_height="wrap_content"
                             android:text="Giờ đến"
                             android:textColor="@color/colorRed"
-                            android:gravity="center_vertical"/>
+                            android:gravity="center_vertical" />
                     </LinearLayout>
                     <View
                         android:layout_width="2dp"
@@ -269,7 +269,7 @@
                         <TextView
                             android:layout_width="250dp"
                             android:layout_height="35dp"
-                            android:text="08:00"
+                            android:id="@+id/txtSetTime"
                             android:gravity="center"
                             />
                     </LinearLayout>
