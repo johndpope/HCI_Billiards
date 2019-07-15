@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
@@ -19,6 +20,9 @@ public class DatBan extends AppCompatActivity {
 
     TextView textView_date;
     TextView textView_Time;
+    TextView textView_songuoi;
+    ImageView giam,tang;
+    int soNguoi = 2;
     private static final int DATE_ID = 0;
     private static final int TIME_ID = 1;
 
@@ -40,7 +44,7 @@ public class DatBan extends AppCompatActivity {
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                         int month_1 = month+1;
-                        String date1 = String.valueOf(month_1) + "/" + String.valueOf(dayOfMonth)
+                        String date1 = String.valueOf(dayOfMonth) + "/" + String.valueOf(month_1)
                                 + "/" + String.valueOf(year);
                         textView_date.setText(date1);
                     }
@@ -69,7 +73,33 @@ public class DatBan extends AppCompatActivity {
             }
         });
 
+        textView_songuoi = findViewById(R.id.txtSoNguoi);
+        textView_songuoi.setText(""+soNguoi);
 
+        giam = findViewById(R.id.imgDes);
+        giam.setClickable(true);
+        giam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(soNguoi<2){
+
+                }else{
+                    soNguoi--;
+                    textView_songuoi.setText(""+soNguoi);
+                }
+
+            }
+        });
+
+        tang = findViewById(R.id.imgAsc);
+        tang.setClickable(true);
+        tang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                soNguoi++;
+                textView_songuoi.setText(""+soNguoi);
+            }
+        });
     }
 
 

@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity
 
     public void clicktoview(View view) {
         ImageView imageViewHomeFragment = findViewById(R.id.btnPopular);
-        Intent intent =new Intent(MainActivity.this,ListBilliards.class);
+        Intent intent =new Intent(MainActivity.this,DatBan.class);
         startActivity(intent);
     }
 
