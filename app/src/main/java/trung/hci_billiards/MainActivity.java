@@ -164,11 +164,11 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
-    public void clickToViewListBtnHeader(View view) {
-        Button button = findViewById(R.id.btnSearchHeader);
-        Intent intent = new Intent(MainActivity.this, ListBilliards.class);
-        startActivity(intent);
-    }
+//    public void clickToViewListBtnHeader(View view) {
+//        Button button = findViewById(R.id.btnSearchHeader);
+//        Intent intent = new Intent(MainActivity.this, ListBilliards.class);
+//        startActivity(intent);
+//    }
 
 
     public void clicktoviewdetailByNear(View view) {
