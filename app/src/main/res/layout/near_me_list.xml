@@ -9,7 +9,7 @@
     android:paddingTop="10dp">
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:layout_columnWeight="1"
         android:orientation="horizontal"
         android:background="@color/colorWhite"
@@ -17,14 +17,14 @@
         >
         <LinearLayout
             android:layout_width="150dp"
-            android:layout_height="120dp"
+            android:layout_height="100dp"
             android:layout_gravity="fill_horizontal"
             android:orientation="vertical"
             android:background="@color/colorWhite">
 
             <ImageView
                 android:layout_width="150dp"
-                android:layout_height="80dp"
+                android:layout_height="100dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:scaleType="centerCrop"
@@ -87,7 +87,37 @@
                         android:textSize="15dp"
                         android:textColor="@color/colorRed"
                         />
+
                 </LinearLayout>
+                <!--rating-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/colorBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đánh giá:"/>
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4.5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:progressTint="#FCE903"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:isIndicator="false"
+                        android:max="5"
+                        android:focusableInTouchMode="true"
+                        android:clickable="true"
+                        />
+
+                </LinearLayout>
+                <!--end rating-->
+
             </LinearLayout>
             <View
                 android:layout_width="match_parent"

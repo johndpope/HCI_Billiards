@@ -11,16 +11,55 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!--<EditText-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:hint="  Tìm kiếm tiệm Billiard"/>-->
-        <include layout="@layout/search_gridview"/>
-        <include layout="@layout/diemdenuytin"/>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <include layout="@layout/xuhuonghiennay"/>
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnBanDangDat"
+                android:text="Bàn đang đặt"
+                android:layout_gravity="center"
+                android:textSize="10dp"/>
 
 
-        <include layout="@layout/hot_nofitication" />
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnLichSuDatBan"
+                android:text="Lịch sử đặt bàn"
+                android:layout_gravity="center"
+                android:textSize="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/frame_nearMe"
+                        >
+                    </FrameLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
     </LinearLayout>
 </ScrollView>

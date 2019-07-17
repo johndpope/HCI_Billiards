@@ -4,21 +4,21 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/baseline_home_24"
-        android:title="Home"/>
+        android:title="Trang chủ"/>
 
     <item
         android:id="@+id/navigation_near_me"
         android:icon="@drawable/baseline_near_me_24"
-        android:title="Near me"/>
-
-    <item
-        android:id="@+id/navigation_search"
-        android:icon="@drawable/baseline_search_24"
-        android:title="Search"/>
+        android:title="Quanh đây"/>
 
     <item
         android:id="@+id/navigation_hot_deal"
         android:icon="@drawable/baseline_whatshot_24"
-        android:title="Hot deal"/>
+        android:title="Ưu đãi HOT"/>
 
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/ic_list_black_24dp"
+        android:title="Booking"/>
+    
 </menu>
