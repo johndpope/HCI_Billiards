@@ -17,7 +17,7 @@
         >
         <LinearLayout
             android:layout_width="150dp"
-            android:layout_height="100dp"
+            android:layout_height="140dp"
             android:layout_gravity="fill_horizontal"
             android:orientation="vertical"
             android:background="@color/colorWhite">
@@ -28,7 +28,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/girl02"
+                android:src="@drawable/billiard4"
                 android:id="@+id/imgDetail"
                 android:clickable="true"
                 android:onClick="clicktoviewdetailByNear"/>
@@ -109,10 +109,9 @@
                         android:layout_marginTop="2dp"
                         android:progressTint="#FCE903"
                         style="?android:attr/ratingBarStyleSmall"
-                        android:isIndicator="false"
+                        android:isIndicator="true"
                         android:max="5"
-                        android:focusableInTouchMode="true"
-                        android:clickable="true"
+
                         />
 
                 </LinearLayout>
@@ -123,6 +122,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="3dp"
+                android:background="@color/colorGreen"
                 />
             <com.google.android.material.button.MaterialButton
                 style="@style/Widget.MaterialComponents.Button.TextButton"
@@ -136,7 +136,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="130dp"
+        android:layout_height="150dp"
         android:layout_columnWeight="1"
         android:orientation="horizontal"
         android:background="@color/colorWhite"
@@ -144,18 +144,18 @@
         android:paddingTop="10dp">
         <LinearLayout
             android:layout_width="150dp"
-            android:layout_height="120dp"
+            android:layout_height="150dp"
             android:layout_gravity="fill_horizontal"
             android:orientation="vertical"
             android:background="@color/colorWhite">
 
             <ImageView
                 android:layout_width="150dp"
-                android:layout_height="80dp"
+                android:layout_height="100dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/girl04"
+                android:src="@drawable/expensive_billiard3"
                 android:clickable="true"
                 android:id="@id/imgDetail"
                 android:onClick="clicktoviewdetailByNear"/>
@@ -215,11 +215,36 @@
                         android:textColor="@color/colorRed"
                         />
                 </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/colorBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đánh giá:"/>
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4.5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:progressTint="#FCE903"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:isIndicator="true"
+                        android:max="5"
+                        />
+
+                </LinearLayout>
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="3dp"
+                android:background="@color/colorGreen"
                 />
             <com.google.android.material.button.MaterialButton
                 style="@style/Widget.MaterialComponents.Button.TextButton"
@@ -232,7 +257,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="130dp"
+        android:layout_height="150dp"
         android:layout_columnWeight="1"
         android:orientation="horizontal"
         android:background="@color/colorWhite"
@@ -240,18 +265,18 @@
         android:paddingTop="10dp">
         <LinearLayout
             android:layout_width="150dp"
-            android:layout_height="120dp"
+            android:layout_height="150dp"
             android:layout_gravity="fill_horizontal"
             android:orientation="vertical"
             android:background="@color/colorWhite">
 
             <ImageView
                 android:layout_width="150dp"
-                android:layout_height="80dp"
+                android:layout_height="100dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/girl07"
+                android:src="@drawable/billiard2"
                 android:clickable="true"
                 android:id="@id/imgDetail"
                 android:onClick="clicktoviewdetailByNear"/>
@@ -311,11 +336,38 @@
                         android:textColor="@color/colorRed"
                         />
                 </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/colorBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đánh giá:"/>
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4.5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:progressTint="#FCE903"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:isIndicator="true"
+                        android:max="5"
+                        android:focusableInTouchMode="true"
+                        android:clickable="true"
+                        />
+
+                </LinearLayout>
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="3dp"
+                android:background="@color/colorGreen"
                 />
             <com.google.android.material.button.MaterialButton
                 style="@style/Widget.MaterialComponents.Button.TextButton"
@@ -328,7 +380,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="130dp"
+        android:layout_height="150dp"
         android:layout_columnWeight="1"
         android:orientation="horizontal"
         android:background="@color/colorWhite"
@@ -336,18 +388,18 @@
         android:paddingTop="10dp">
         <LinearLayout
             android:layout_width="150dp"
-            android:layout_height="120dp"
+            android:layout_height="150dp"
             android:layout_gravity="fill_horizontal"
             android:orientation="vertical"
             android:background="@color/colorWhite">
 
             <ImageView
                 android:layout_width="150dp"
-                android:layout_height="80dp"
+                android:layout_height="100dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/anhbia"
+                android:src="@drawable/billiard1"
                 android:clickable="true"
                 android:id="@id/imgDetail"
                 android:onClick="clicktoviewdetailByNear"/>
@@ -407,11 +459,38 @@
                         android:textColor="@color/colorRed"
                         />
                 </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/colorBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đánh giá:"/>
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4.5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:progressTint="#FCE903"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:isIndicator="true"
+                        android:max="5"
+                        android:focusableInTouchMode="true"
+
+                        />
+
+                </LinearLayout>
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="3dp"
+                android:background="@color/colorGreen"
                 />
             <com.google.android.material.button.MaterialButton
                 style="@style/Widget.MaterialComponents.Button.TextButton"
@@ -424,7 +503,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="130dp"
+        android:layout_height="150dp"
         android:layout_columnWeight="1"
         android:orientation="horizontal"
         android:background="@color/colorWhite"
@@ -432,18 +511,18 @@
         android:paddingTop="10dp">
         <LinearLayout
             android:layout_width="150dp"
-            android:layout_height="120dp"
+            android:layout_height="150dp"
             android:layout_gravity="fill_horizontal"
             android:orientation="vertical"
             android:background="@color/colorWhite">
 
             <ImageView
                 android:layout_width="150dp"
-                android:layout_height="80dp"
+                android:layout_height="100dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/billiard4"
+                android:src="@drawable/expensive_billiard6"
                 android:clickable="true"
                 android:id="@id/imgDetail"
                 android:onClick="clicktoviewdetailByNear"/>
@@ -503,11 +582,37 @@
                         android:textColor="@color/colorRed"
                         />
                 </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/colorBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đánh giá:"/>
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4.5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:progressTint="#FCE903"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:isIndicator="true"
+                        android:max="5"
+                        android:focusableInTouchMode="true"
+                        />
+
+                </LinearLayout>
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="3dp"
+                android:background="@color/colorGreen"
                 />
             <com.google.android.material.button.MaterialButton
                 style="@style/Widget.MaterialComponents.Button.TextButton"
@@ -518,13 +623,5 @@
                 android:onClick="clickToDatBan"/>
         </LinearLayout>
     </LinearLayout>
-    <!--<LinearLayout-->
-        <!--android:layout_width="0dp"-->
-        <!--android:layout_height="50dp"-->
-        <!--android:layout_columnWeight="1"-->
-        <!--android:orientation="horizontal"-->
-        <!--android:background="@color/colorWhite"-->
-        <!--android:layout_marginBottom="5dp"-->
-        <!--android:paddingTop="10dp">-->
-    <!--</LinearLayout>-->
+
 </GridLayout>

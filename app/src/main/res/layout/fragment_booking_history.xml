@@ -3,10 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SearchFragment">
+    tools:context=".BookingFragment">
 
     <LinearLayout
-        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -24,7 +23,7 @@
                 android:id="@+id/btnBanDangDat"
                 android:text="Bàn đang đặt"
                 android:layout_gravity="center"
-                android:textSize="10dp"/>
+                android:textSize="18dp"/>
 
 
             <com.google.android.material.button.MaterialButton
@@ -34,7 +33,7 @@
                 android:id="@+id/btnLichSuDatBan"
                 android:text="Lịch sử đặt bàn"
                 android:layout_gravity="center"
-                android:textSize="10dp"/>
+                android:textSize="18dp"/>
 
         </LinearLayout>
 
@@ -53,7 +52,7 @@
                     <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/frame_nearMe"
+                        android:id="@+id/frame_booking_history"
                         >
                     </FrameLayout>
                 </LinearLayout>
