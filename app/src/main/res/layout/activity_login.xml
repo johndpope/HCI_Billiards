@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bglogin"
+
     tools:context=".LoginActivity">
 
     <TextView
@@ -49,5 +49,32 @@
         android:id="@id/btnLogin"
         android:onClick="clickToHome"
         />
+
+    <EditText
+        android:id="@+id/edtTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Nhập số điện thoại"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get Code"
+        android:textColor="@color/colorBlack"
+        android:backgroundTint="@color/colorXam"
+        android:id="@+id/btnGetCode"/>
+    <EditText
+        android:id="@+id/edtCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:hint="enter code received"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSignIn"
+        android:text="Sign in"/>
 
 </LinearLayout>
