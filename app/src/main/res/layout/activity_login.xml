@@ -50,6 +50,8 @@
         android:onClick="clickToHome"
         />
 
+
+    
     <EditText
         android:id="@+id/edtTextPhone"
         android:layout_width="match_parent"

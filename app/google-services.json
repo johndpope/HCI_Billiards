@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "266082127612",
+    "firebase_url": "https://hcibilliards-9e3fe.firebaseio.com",
+    "project_id": "hcibilliards-9e3fe",
+    "storage_bucket": "hcibilliards-9e3fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266082127612:android:d472cb3937b5ebe6",
+        "android_client_info": {
+          "package_name": "trung.hci_billiards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266082127612-ov3aqm4d8552lcap7crg2i4g7hhdh40k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "trung.hci_billiards",
+            "certificate_hash": "7dc0fe0a55521227ea805652bc3d741315f129de"
+          }
+        },
+        {
+          "client_id": "266082127612-2sqnjao7mv75vh5maug8o55lit1l3qj4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8qG3oMtZn2B9DB81YXdly_507Lu2tJ5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266082127612-2sqnjao7mv75vh5maug8o55lit1l3qj4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
