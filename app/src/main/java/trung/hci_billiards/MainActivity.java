@@ -17,6 +17,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.facebook.accountkit.Account;
+import com.facebook.accountkit.AccountKit;
+import com.facebook.accountkit.AccountKitCallback;
+import com.facebook.accountkit.AccountKitError;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.material.appbar.MaterialToolbar;
@@ -29,6 +33,7 @@ import com.vorlonsoft.android.rate.StoreType;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private static final String TAG = "MainActivity";
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -70,10 +75,26 @@ public class MainActivity extends AppCompatActivity
 
         Button den = findViewById(R.id.btnDen);
 
+        AccountKit.getCurrentAccount(new AccountKitCallback<Account>() {
+            @Override
+            public void onSuccess(Account account) {
+                TextView txtId = findViewById(R.id.txtId);
+                TextView txtInfo = findViewById(R.id.txtInfo);
+                txtId.setText("Id: " + account.getId());
+//                if(account.getPhoneNumber().){
+//                    txtInfo.setText(String.format("Email: %s", account.getEmail()));
+//                }else{
+//                    txtId.setText(String.format("Phone: %s", account.getPhoneNumber()));
+//                }
 
 
+            }
 
+            @Override
+            public void onError(AccountKitError accountKitError) {
 
+            }
+        });
 
         BottomNavigationView bottom_navigation = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottom_navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
@@ -89,8 +110,6 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = findViewById(R.id.drawer_navigation);
 
 
-
-
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
@@ -100,12 +119,15 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         Fragment selectedFragment = null;
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.side_nav_dang_xuat:
                 Toast.makeText(this, "Đăng xuất thành công", Toast.LENGTH_SHORT).show();
+                AccountKit.logOut();
                 finish();
                 break;
 
@@ -125,13 +147,12 @@ public class MainActivity extends AppCompatActivity
         }
 
 
-
         return true;
     }
 
     public void clicktoview(View view) {
         ImageView imageViewHomeFragment = findViewById(R.id.btnPopular);
-        Intent intent =new Intent(MainActivity.this,DatBan.class);
+        Intent intent = new Intent(MainActivity.this, DatBan.class);
         startActivity(intent);
     }
 
@@ -175,8 +196,8 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void clickToDatBanImg(View view) {
-        ImageView imageView =findViewById(R.id.imgDiemDenGanNhat);
-        Intent intent = new Intent(this,DatBan.class);
+        ImageView imageView = findViewById(R.id.imgDiemDenGanNhat);
+        Intent intent = new Intent(this, DatBan.class);
         startActivity(intent);
     }
 

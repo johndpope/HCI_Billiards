@@ -21,38 +21,70 @@ public class DatBan extends AppCompatActivity {
     TextView textView_date;
     TextView textView_Time;
     TextView textView_songuoi;
-    ImageView giam,tang;
+    ImageView giam,tang,imgDateBack, imgDateNext;
     int soNguoi = 2;
-    private static final int DATE_ID = 0;
-    private static final int TIME_ID = 1;
+    int date, month, yean;
+    int date_tang;
 
     private static final String TAG = "DatBan";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dat_ban);
-
+        imgDateBack = findViewById(R.id.imgDateBack);
+        imgDateNext = findViewById(R.id.imgDateNext);
         textView_date = findViewById(R.id.txtSetDate);
-        textView_date.setClickable(true);
-        textView_date.setOnClickListener(new View.OnClickListener() {
+        final Calendar calendar = Calendar.getInstance();
+        date = calendar.get(Calendar.DATE);
+        date_tang = date;
+        month = calendar.get(Calendar.MONTH)+1;
+        yean = calendar.get(Calendar.YEAR);
+        textView_date.setText(date + "/" + month + "/" + yean);
+        imgDateNext.setClickable(true);
+        imgDateNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Calendar calendar = Calendar.getInstance();
+                if ((date_tang-date)>7){
 
-                DatePickerDialog datePickerDialog = new DatePickerDialog(DatBan.this);
-                datePickerDialog.setOnDateSetListener(new DatePickerDialog.OnDateSetListener() {
-                    @Override
-                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                        int month_1 = month+1;
-                        String date1 = String.valueOf(dayOfMonth) + "/" + String.valueOf(month_1)
-                                + "/" + String.valueOf(year);
-                        textView_date.setText(date1);
-                    }
-                });
-                datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis()+86400000);
-                datePickerDialog.show();
+                }else{
+                    date_tang++;
+                    textView_date.setText(date_tang + "/" + month + "/" + yean);
+                }
+
             }
         });
+        imgDateBack.setClickable(true);
+        imgDateBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (date_tang==date){
+
+                }else{
+                    date_tang--;
+                    textView_date.setText(date_tang + "/" + month + "/" + yean);
+                }
+            }
+        });
+//        textView_date.setClickable(true);
+//        textView_date.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                final Calendar calendar = Calendar.getInstance();
+//
+//                DatePickerDialog datePickerDialog = new DatePickerDialog(DatBan.this);
+//                datePickerDialog.setOnDateSetListener(new DatePickerDialog.OnDateSetListener() {
+//                    @Override
+//                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+//                        int month_1 = month+1;
+//                        String date1 = String.valueOf(dayOfMonth) + "/" + String.valueOf(month_1)
+//                                + "/" + String.valueOf(year);
+//                        textView_date.setText(date1);
+//                    }
+//                });
+//                datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis()+86400000);
+//                datePickerDialog.show();
+//            }
+//        });
 
         textView_Time = findViewById(R.id.txtSetTime);
         textView_Time.setClickable(true);

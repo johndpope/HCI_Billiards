@@ -29,9 +29,9 @@ import com.google.android.material.button.MaterialButton;
 
 public class LoginActivity extends FragmentActivity {
 
-    MaterialButton btnLogin;
+    Button btnLogin;
 
-    public static int APP_REQUEST_CODE = 99;
+    public static int APP_REQUEST_CODE = 999;
 //    public static final String TAG = "MainActivity";
     private Button login, logout;
 
@@ -40,13 +40,20 @@ public class LoginActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        logout = (Button) findViewById(R.id.logout);
+
         login = (Button) findViewById(R.id.login);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startLoginPage(LoginType.PHONE);
 
+            }
+        });
+        btnLogin = findViewById(R.id.btnLogin);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startLoginPage(LoginType.EMAIL);
             }
         });
 
@@ -124,17 +131,34 @@ public class LoginActivity extends FragmentActivity {
 //    }
 
     private void startLoginPage(LoginType loginType) {
-        String[] smsWhitelist = new String[]{"VN"};
-        PhoneNumber phoneNumber = new PhoneNumber("+84","VN");
 
-        Intent intent = new Intent ( this, AccountKitActivity.class );
-        AccountKitConfiguration.AccountKitConfigurationBuilder configurationBuilder = new AccountKitConfiguration.AccountKitConfigurationBuilder ( LoginType.PHONE, AccountKitActivity.ResponseType.TOKEN );
-        configurationBuilder.setDefaultCountryCode ("VN");
-        configurationBuilder.setInitialPhoneNumber ( phoneNumber );
-        configurationBuilder.setReadPhoneStateEnabled(true);
-        configurationBuilder.setReceiveSMS(true);
-        intent.putExtra ( AccountKitActivity.ACCOUNT_KIT_ACTIVITY_CONFIGURATION, configurationBuilder.build () );
-        startActivityForResult ( intent, APP_REQUEST_CODE );
+        if (loginType == LoginType.EMAIL) {
+            final Intent intent = new Intent(this, AccountKitActivity.class);
+            AccountKitConfiguration.AccountKitConfigurationBuilder configurationBuilder =
+                    new AccountKitConfiguration.AccountKitConfigurationBuilder(
+                            LoginType.EMAIL,
+                            AccountKitActivity.ResponseType.CODE); // Use token when 'Enable client Access Token Flow' is YES
+            intent.putExtra(
+                    AccountKitActivity.ACCOUNT_KIT_ACTIVITY_CONFIGURATION,
+                    configurationBuilder.build());
+            startActivityForResult(intent, APP_REQUEST_CODE);}
+        else if(loginType == LoginType.PHONE){
+            String[] smsWhitelist = new String[]{"VN"};
+            PhoneNumber phoneNumber = new PhoneNumber("+84","VN");
+
+            Intent intent = new Intent ( this, AccountKitActivity.class );
+            AccountKitConfiguration.AccountKitConfigurationBuilder configurationBuilder = new AccountKitConfiguration.AccountKitConfigurationBuilder ( LoginType.PHONE, AccountKitActivity.ResponseType.TOKEN );
+            configurationBuilder.setDefaultCountryCode ("VN");
+            configurationBuilder.setInitialPhoneNumber ( phoneNumber );
+            configurationBuilder.setReadPhoneStateEnabled(true);
+            configurationBuilder.setReceiveSMS(true);
+            UIManager uiManager ;
+
+
+            intent.putExtra ( AccountKitActivity.ACCOUNT_KIT_ACTIVITY_CONFIGURATION, configurationBuilder.build () );
+            startActivityForResult ( intent, APP_REQUEST_CODE );
+        }
+
     }
 
     @Override
