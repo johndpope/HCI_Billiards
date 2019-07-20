@@ -51,32 +51,27 @@
         />
 
 
-    
-    <EditText
-        android:id="@+id/edtTextPhone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
 
-        android:hint="Nhập số điện thoại"
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:text="Phone Login"
+        android:textColor="#fff"
+        android:background="#0099ff"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
         />
+
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="get Code"
-        android:textColor="@color/colorBlack"
-        android:backgroundTint="@color/colorXam"
-        android:id="@+id/btnGetCode"/>
-    <EditText
-        android:id="@+id/edtCode"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:digits="0123456789"
-        android:inputType="number"
-        android:hint="enter code received"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnSignIn"
-        android:text="Sign in"/>
+        android:id="@+id/logout"
+        android:text="Logout"
+        android:textColor="#fff"
+        android:background="#ff9900"
+        android:textAllCaps="false"
+        android:onClick="logout"
+        android:visibility="gone"/>
 
 </LinearLayout>

@@ -1,7 +1,11 @@
 <resources>
-    <string name="app_name">HCI_Billiards</string>
 
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">HCI_Billiards</string>
+    <string name="FACEBOOK_APP_ID">411711712884932</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">37f41ef9290262f8f4d56f8d2ecbb30b</string>
+    <string name="ak_login_protocol_scheme">ak37f41ef9290262f8f4d56f8d2ecbb30b"</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
