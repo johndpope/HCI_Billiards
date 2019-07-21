@@ -128,8 +128,10 @@
                 android:textSize="15dp"
                 android:textStyle="bold"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                app:strokeColor="@color/colorPrimary"
+                app:strokeColor="@color/colorRed"
                 android:layout_marginRight="10dp"
+                android:onClick="BanDaDuocDat"
+                android:textColor="@color/colorRed"
                 />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
@@ -138,8 +140,10 @@
                 android:textSize="15dp"
                 android:textStyle="bold"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                app:strokeColor="@color/colorPrimary"
+                app:strokeColor="@color/colorRed"
+                android:textColor="@color/colorRed"
                 android:layout_marginRight="10dp"
+                android:onClick="BanDaDuocDat"
                 />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
@@ -148,8 +152,10 @@
                 android:textSize="15dp"
                 android:textStyle="bold"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                app:strokeColor="@color/colorPrimary"
+                app:strokeColor="@color/colorRed"
+                android:textColor="@color/colorRed"
                 android:layout_marginRight="10dp"
+                android:onClick="BanDaDuocDat"
                 />
         </LinearLayout>
         <View
@@ -170,8 +176,10 @@
                 android:textSize="15dp"
                 android:textStyle="bold"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                app:strokeColor="@color/colorPrimary"
+                app:strokeColor="@color/colorRed"
                 android:layout_marginRight="10dp"
+                android:onClick="BanDaDuocDat"
+                android:textColor="@color/colorRed"
                 />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
@@ -180,8 +188,10 @@
                 android:textSize="15dp"
                 android:textStyle="bold"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                app:strokeColor="@color/colorPrimary"
+                app:strokeColor="@color/colorRed"
                 android:layout_marginRight="10dp"
+                android:onClick="BanDaDuocDat"
+                android:textColor="@color/colorRed"
                 />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
@@ -192,6 +202,7 @@
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 app:strokeColor="@color/colorPrimary"
                 android:layout_marginRight="10dp"
+                android:onClick="Ban3trua"
                 />
         </LinearLayout>
         <LinearLayout
@@ -208,6 +219,7 @@
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 app:strokeColor="@color/colorPrimary"
                 android:layout_marginRight="10dp"
+                android:onClick="Ban4trua"
                 />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
@@ -218,6 +230,7 @@
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 app:strokeColor="@color/colorPrimary"
                 android:layout_marginRight="10dp"
+                android:onClick="Ban5trua"
                 />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
@@ -228,6 +241,7 @@
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 app:strokeColor="@color/colorPrimary"
                 android:layout_marginRight="10dp"
+                android:onClick="Ban6trua"
                 />
         </LinearLayout>
         <View
@@ -249,8 +263,10 @@
                 android:textSize="15dp"
                 android:textStyle="bold"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                app:strokeColor="@color/colorPrimary"
+                app:strokeColor="@color/colorRed"
+                android:textColor="@color/colorRed"
                 android:layout_marginRight="10dp"
+                android:onClick="BanDaDuocDat"
                 />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
@@ -259,8 +275,10 @@
                 android:textSize="15dp"
                 android:textStyle="bold"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                app:strokeColor="@color/colorPrimary"
+                app:strokeColor="@color/colorRed"
+                android:textColor="@color/colorRed"
                 android:layout_marginRight="10dp"
+                android:onClick="BanDaDuocDat"
                 />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
@@ -271,6 +289,7 @@
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 app:strokeColor="@color/colorPrimary"
                 android:layout_marginRight="10dp"
+                android:onClick="Ban3chieu"
                 />
         </LinearLayout>
         <LinearLayout
@@ -287,6 +306,7 @@
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 app:strokeColor="@color/colorPrimary"
                 android:layout_marginRight="10dp"
+                android:onClick="Ban4chieu"
                 />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
@@ -297,6 +317,7 @@
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 app:strokeColor="@color/colorPrimary"
                 android:layout_marginRight="10dp"
+                android:onClick="Ban5chieu"
                 />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
@@ -305,7 +326,8 @@
                 android:textSize="15dp"
                 android:textStyle="bold"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                app:strokeColor="@color/colorPrimary"
+                app:strokeColor="@color/colorRed"
+                android:textColor="@color/colorRed"
                 android:layout_marginRight="10dp"
                 />
         </LinearLayout>
@@ -327,8 +349,10 @@
                 android:textSize="15dp"
                 android:textStyle="bold"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                app:strokeColor="@color/colorPrimary"
+                app:strokeColor="@color/colorRed"
+                android:textColor="@color/colorRed"
                 android:layout_marginRight="10dp"
+                android:onClick="BanDaDuocDat"
                 />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
@@ -337,8 +361,10 @@
                 android:textSize="15dp"
                 android:textStyle="bold"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                app:strokeColor="@color/colorPrimary"
+                app:strokeColor="@color/colorRed"
+                android:textColor="@color/colorRed"
                 android:layout_marginRight="10dp"
+                android:onClick="BanDaDuocDat"
                 />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
@@ -347,8 +373,10 @@
                 android:textSize="15dp"
                 android:textStyle="bold"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                app:strokeColor="@color/colorPrimary"
+                app:strokeColor="@color/colorRed"
+                android:textColor="@color/colorRed"
                 android:layout_marginRight="10dp"
+                android:onClick="BanDaDuocDat"
                 />
         </LinearLayout>
         <LinearLayout
@@ -362,8 +390,10 @@
                 android:textSize="15dp"
                 android:textStyle="bold"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                app:strokeColor="@color/colorPrimary"
+                app:strokeColor="@color/colorRed"
+                android:textColor="@color/colorRed"
                 android:layout_marginRight="10dp"
+                android:onClick="BanDaDuocDat"
                 />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
@@ -372,8 +402,10 @@
                 android:textSize="15dp"
                 android:textStyle="bold"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                app:strokeColor="@color/colorPrimary"
+                app:strokeColor="@color/colorRed"
+                android:textColor="@color/colorRed"
                 android:layout_marginRight="10dp"
+                android:onClick="BanDaDuocDat"
                 />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
@@ -384,6 +416,7 @@
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 app:strokeColor="@color/colorPrimary"
                 android:layout_marginRight="10dp"
+                android:onClick="Ban6toi"
                 />
         </LinearLayout>
         <View

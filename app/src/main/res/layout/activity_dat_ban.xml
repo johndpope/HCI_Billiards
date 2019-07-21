@@ -384,7 +384,8 @@
             android:id="@+id/btnDatBanNgay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Đặt Bàn Ngay" />
+            android:text="Đặt Bàn"
+            android:onClick="clickToDatBanNgay"/>
 
     </LinearLayout>
 

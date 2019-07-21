@@ -6,8 +6,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.FragmentTransaction;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -20,17 +22,17 @@ public class DatBan extends AppCompatActivity {
 
     TextView textView_date;
     TextView textView_Time;
-    TextView textView_songuoi;
-    ImageView giam,tang,imgDateBack, imgDateNext;
-    int soNguoi = 2;
+    ImageView imgDateBack, imgDateNext;
     int date, month, yean;
     int date_tang;
 
     private static final String TAG = "DatBan";
     private static final String BIDA_BANG = "Bida Băng";
     private static final String BIDA_LO = "Bida Lỗ";
-    String chonban ;
+    String chonban ="";
     Dialog dialog;
+    TextView txtLoaiBan;
+    Button datbanngay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,8 @@ public class DatBan extends AppCompatActivity {
         imgDateBack = findViewById(R.id.imgDateBack);
         imgDateNext = findViewById(R.id.imgDateNext);
         textView_date = findViewById(R.id.txtSetDate);
+        textView_Time = findViewById(R.id.txtSetTime);
+
         final Calendar calendar = Calendar.getInstance();
         date = calendar.get(Calendar.DATE);
         date_tang = date;
@@ -54,6 +58,8 @@ public class DatBan extends AppCompatActivity {
                 }else{
                     date_tang++;
                     textView_date.setText(date_tang + "/" + month + "/" + yean);
+                    chonban = "";
+                    textView_Time.setText(chonban);
                 }
 
             }
@@ -67,13 +73,15 @@ public class DatBan extends AppCompatActivity {
                 }else{
                     date_tang--;
                     textView_date.setText(date_tang + "/" + month + "/" + yean);
+                    chonban = "";
+                    textView_Time.setText(chonban);
                 }
             }
         });
 
 
 
-        final TextView txtLoaiBan;
+
         txtLoaiBan = findViewById(R.id.txtLoaiBan);
         txtLoaiBan.setText(BIDA_BANG);
         ImageView imgLoaiBan1, imgLoaiBan2;
@@ -85,8 +93,12 @@ public class DatBan extends AppCompatActivity {
             public void onClick(View v) {
                 if(txtLoaiBan.getText().toString().equals(BIDA_BANG)){
                     txtLoaiBan.setText(BIDA_LO);
+                    chonban = "";
+                    textView_Time.setText(chonban);
                 }else{
                     txtLoaiBan.setText(BIDA_BANG);
+                    chonban = "";
+                    textView_Time.setText(chonban);
                 }
             }
         });
@@ -96,33 +108,17 @@ public class DatBan extends AppCompatActivity {
             public void onClick(View v) {
                 if(txtLoaiBan.getText().toString().equals(BIDA_BANG)){
                     txtLoaiBan.setText(BIDA_LO);
+                    chonban = "";
+                    textView_Time.setText(chonban);
                 }else{
                     txtLoaiBan.setText(BIDA_BANG);
+                    chonban = "";
+                    textView_Time.setText(chonban);
                 }
             }
         });
-//        textView_date.setClickable(true);
-//        textView_date.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                final Calendar calendar = Calendar.getInstance();
-//
-//                DatePickerDialog datePickerDialog = new DatePickerDialog(DatBan.this);
-//                datePickerDialog.setOnDateSetListener(new DatePickerDialog.OnDateSetListener() {
-//                    @Override
-//                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-//                        int month_1 = month+1;
-//                        String date1 = String.valueOf(dayOfMonth) + "/" + String.valueOf(month_1)
-//                                + "/" + String.valueOf(year);
-//                        textView_date.setText(date1);
-//                    }
-//                });
-//                datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis()+86400000);
-//                datePickerDialog.show();
-//            }
-//        });
 
-        textView_Time = findViewById(R.id.txtSetTime);
+
         textView_Time.setClickable(true);
         textView_Time.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -134,7 +130,7 @@ public class DatBan extends AppCompatActivity {
                     dialog.setContentView(R.layout.activity_bida_bang);
                     dialog.show();
                 }else{
-                    Dialog dialog = new Dialog(DatBan.this);
+                    dialog = new Dialog(DatBan.this, android.R.style.Theme_Material_NoActionBar_Fullscreen);
                     dialog.setTitle("Đặt bàn bida băng");
                     dialog.setContentView(R.layout.activity_bida_lo);
                     dialog.show();
@@ -143,65 +139,36 @@ public class DatBan extends AppCompatActivity {
             }
         });
 
-
-
-        //        textView_Time.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Log.d(TAG, "onClick: TimePicker");
-//                final Calendar calendar = Calendar.getInstance();
-//
-//                TimePickerDialog timePickerDialog = new TimePickerDialog(DatBan.this, new TimePickerDialog.OnTimeSetListener() {
-//                    @Override
-//                    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-//                        textView_Time.setText(hourOfDay+":"+minute);
-//                    }
-//                },0,0,false);
-//                timePickerDialog.show();
-//
-//            }
-//        });
-//
-//        textView_songuoi = findViewById(R.id.txtSoNguoi);
-//        textView_songuoi.setText(""+soNguoi);
-
-//        giam = findViewById(R.id.imgDes);
-//        giam.setClickable(true);
-//        giam.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(soNguoi<2){
-//
-//                }else{
-//                    soNguoi--;
-//                    textView_songuoi.setText(""+soNguoi);
-//                }
-//
-//            }
-//        });
-//
-//        tang = findViewById(R.id.imgAsc);
-//        tang.setClickable(true);
-//        tang.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                soNguoi++;
-//                textView_songuoi.setText(""+soNguoi);
-//            }
-//        });
-        Button datbanngay = findViewById(R.id.btnDatBanNgay);
+        datbanngay = findViewById(R.id.btnDatBanNgay);
         datbanngay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(DatBan.this, BookingFragment.class);
-//                startActivity(intent);
+                Log.d(TAG, "clickToDatBanNgay: " +  "dat ban");
+                if (chonban.equals("")){
+                    Log.d(TAG, "clickToDatBanNgay: " + "rong");
+                    new AlertDialog.Builder(DatBan.this)
+                            .setMessage("Mời bạn chọn giờ đặt bàn!")
+                            .setNegativeButton(null,null)
+                            .setCancelable(false)
+                            .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    showDialog();
+                                }
+                            });
+                }else{
+                    Intent intent = new Intent(DatBan.this, ListBilliards.class);
+                    startActivity(intent);
+                }
             }
         });
+
+
     }
 
     public void Ban1sang(View view) {
         Button B = (Button)view;
-        chonban = "Sáng - " + B.getText().toString();
+        chonban = "Sáng: 8h - 12h - " + B.getText().toString();
         textView_Time.setText(chonban);
         dialog.dismiss();
 
@@ -209,7 +176,7 @@ public class DatBan extends AppCompatActivity {
 
     public void Ban2sang(View view) {
         Button B = (Button)view;
-        chonban = "Sáng - " + B.getText().toString();
+        chonban = "Sáng: 8h - 12h - " + B.getText().toString();
         textView_Time.setText(chonban);
         dialog.dismiss();
 
@@ -221,9 +188,125 @@ public class DatBan extends AppCompatActivity {
     }
 
     public void BanDaDuocDat(View view) {
-        Toast.makeText(DatBan.this,"Bàn này đã có người đặt\nMời bạn chọn bàn khác", Toast.LENGTH_LONG).show();
+        Toast.makeText(DatBan.this,"Bàn này đã có người đặt\nMời bạn chọn bàn khác", Toast.LENGTH_SHORT).show();
         new AlertDialog.Builder(DatBan.this)
                 .setMessage("Bàn này đã có người đặt.\nMời bạn chọn bàn khác")
                 .setPositiveButton("OK",null);
+    }
+
+    public void Ban3trua(View view) {
+        Button B = (Button)view;
+        chonban = "Trưa: 12h - 16h - " + B.getText().toString();
+        textView_Time.setText(chonban);
+        dialog.dismiss();
+    }
+    public void Ban3trua_lo(View view) {
+        Button B = (Button)view;
+        chonban = "Trưa: 12h - 16h - " + B.getText().toString();
+        textView_Time.setText(chonban);
+        dialog.dismiss();
+    }
+    public void Ban4trua(View view) {
+        Button B = (Button)view;
+        chonban = "Trưa: 12h - 16h - " + B.getText().toString();
+        textView_Time.setText(chonban);
+        dialog.dismiss();
+    }
+
+
+    public void Ban5trua(View view) {
+        Button B = (Button)view;
+        chonban = "Trưa: 12h - 16h - " + B.getText().toString();
+        textView_Time.setText(chonban);
+        dialog.dismiss();
+    }
+    public void Ban6trua(View view) {
+        Button B = (Button)view;
+        chonban = "Trưa: 12h - 16h - " + B.getText().toString();
+        textView_Time.setText(chonban);
+        dialog.dismiss();
+    }
+
+    public void Ban3chieu(View view) {
+        Button B = (Button)view;
+        chonban = "Chiều: 16h - 19h - " + B.getText().toString();
+        textView_Time.setText(chonban);
+        dialog.dismiss();
+    }
+    public void Ban3chieu_lo(View view) {
+        Button B = (Button)view;
+        chonban = "Chiều: 16h - 19h - " + B.getText().toString();
+        textView_Time.setText(chonban);
+        dialog.dismiss();
+    }
+    public void Ban4chieu(View view) {
+        Button B = (Button)view;
+        chonban = "Chiều: 16h - 19h - " + B.getText().toString();
+        textView_Time.setText(chonban);
+        dialog.dismiss();
+    }
+    public void Ban5chieu(View view) {
+        Button B = (Button)view;
+        chonban = "Chiều: 16h - 19h - " + B.getText().toString();
+        textView_Time.setText(chonban);
+        dialog.dismiss();
+    }
+
+    public void Ban6toi(View view) {
+        Button B = (Button)view;
+        chonban = "Tối: 19h - 21h - " + B.getText().toString();
+        textView_Time.setText(chonban);
+        dialog.dismiss();
+    }
+
+    public void Ban1sang_lo(View view) {
+        Button B = (Button)view;
+        chonban = "Sáng: 8h - 12h - " + B.getText().toString();
+        textView_Time.setText(chonban);
+        dialog.dismiss();
+
+    }
+
+    public void Ban2sang_lo(View view) {
+        Button B = (Button)view;
+        chonban = "Sáng: 8h - 12h - " + B.getText().toString();
+        textView_Time.setText(chonban);
+        dialog.dismiss();
+
+    }
+
+    public void clickToDatBanNgay(View view) {
+        Log.d(TAG, "clickToDatBanNgay: " +  "dat ban");
+        if (chonban.equals("")){
+            Log.d(TAG, "clickToDatBanNgay: " + "rong");
+            new AlertDialog.Builder(DatBan.this)
+                    .setMessage("Mời bạn chọn giờ đặt bàn!")
+                    .setNegativeButton(null,null)
+                    .setCancelable(false)
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            showDialog();
+                        }
+                    });
+        }else{
+            Intent intent = new Intent(DatBan.this, ListBilliards.class);
+            startActivity(intent);
+        }
+    }
+
+    public void showDialog(){
+        String loaiBan = txtLoaiBan.getText().toString();
+        if (loaiBan.equals(BIDA_BANG)){
+            dialog = new Dialog(DatBan.this, android.R.style.Theme_Material_NoActionBar_Fullscreen);
+            dialog.setTitle("Đặt bàn bida lỗ");
+            dialog.setContentView(R.layout.activity_bida_bang);
+            dialog.show();
+        }else{
+            dialog = new Dialog(DatBan.this, android.R.style.Theme_Material_NoActionBar_Fullscreen);
+            dialog.setTitle("Đặt bàn bida băng");
+            dialog.setContentView(R.layout.activity_bida_lo);
+            dialog.show();
+        }
     }
 }
