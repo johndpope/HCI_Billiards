@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/colorWhite"
+    >
+
+    <LinearLayout
+        android:layout_width="125dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khung giờ"
+            android:textSize="25dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sáng: \n8h - 12h"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trưa: \n12h - 16h"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chiều: \n16h - 19h"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tối: \n19h - 21h"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bàn"
+                android:textSize="25dp"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                />
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <com.google.android.material.button.MaterialButton
+               android:layout_width="80dp"
+               android:layout_height="40dp"
+               android:text="Bàn 1"
+               android:textSize="15dp"
+               android:textStyle="bold"
+               style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+               app:strokeColor="@color/colorPrimary"
+               android:layout_marginRight="10dp"
+               android:id="@+id/btnChonBan"
+               android:onClick="Ban1sang"
+               />
+           <com.google.android.material.button.MaterialButton
+               android:layout_width="80dp"
+               android:layout_height="40dp"
+               android:text="Bàn 2"
+               android:textSize="15dp"
+               android:textStyle="bold"
+               style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+               app:strokeColor="@color/colorPrimary"
+               android:layout_marginRight="10dp"
+               android:onClick="Ban2sang"
+               />
+           <com.google.android.material.button.MaterialButton
+               android:layout_width="80dp"
+               android:layout_height="40dp"
+               android:text="Bàn 3"
+               android:textSize="15dp"
+               android:textStyle="bold"
+               style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+               app:strokeColor="@color/colorRed"
+               android:layout_marginRight="10dp"
+               android:onClick="BanDaDuocDat"
+               android:textColor="@color/colorRed"
+               />
+       </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 4"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 5"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 6"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorXam" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 2"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 3"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 4"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 5"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 6"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorXam" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 2"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 3"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 4"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 5"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 6"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorXam" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 2"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 3"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 4"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 5"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Bàn 6"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorXam" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
