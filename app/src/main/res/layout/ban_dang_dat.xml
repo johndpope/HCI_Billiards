@@ -30,8 +30,7 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/expensive_billiard6"
                 android:id="@id/imgDetail"
-                android:clickable="true"
-                android:onClick="clicktoviewdetailByNear"/>
+                />
         </LinearLayout>
 
         <LinearLayout
