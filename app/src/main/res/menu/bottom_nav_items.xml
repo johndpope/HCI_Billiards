@@ -11,10 +11,6 @@
         android:icon="@drawable/baseline_near_me_24"
         android:title="Quanh đây"/>
 
-    <item
-        android:id="@+id/navigation_hot_deal"
-        android:icon="@drawable/baseline_whatshot_24"
-        android:title="Ưu đãi HOT"/>
 
     <item
         android:id="@+id/navigation_search"

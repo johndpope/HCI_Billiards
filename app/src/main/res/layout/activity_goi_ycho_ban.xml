@@ -1,439 +1,525 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_marginTop="15dp"
-    tools:context=".GoiYChoBan">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:background="@color/colorWhite"
+        android:clickable="true"
+        android:onClick="layoutgannhat1"
+        android:orientation="horizontal"
         android:paddingLeft="10dp">
+
         <ImageView
             android:layout_width="170dp"
             android:layout_height="120dp"
-            android:src="@drawable/billiard4"
             android:clickable="true"
-            android:onClick="clickToDatBanImg"
-            android:id="@+id/imgGoiYChoBan"/>
+            android:onClick="layoutgannhat1"
+            android:src="@drawable/billiard4" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="120dp"
+            android:gravity="center_vertical"
             android:orientation="vertical"
-            android:paddingLeft="15dp"
-            android:gravity="center_vertical">
+            android:paddingLeft="15dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Billiard HCI Assignment -\nQuận 12 Tô Ký"
-                android:textColor="@color/colorBlack"
-                />
+                android:text="Billiard Kiên Yết"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-3dp"
+                android:text="Quận 12 Tô Ký"
+                android:textColor="@color/colorBlack" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:src="@drawable/ic_access_time_black_24dp"/>
+                    android:src="@drawable/ic_access_time_black_24dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10 phút nữa - 3.3 km"
-                    android:textColor="@color/colorBlack"/>
+                    android:textColor="@color/colorBlack" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:background="@color/colorWhite">
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/tag"/>
+                    android:src="@drawable/tag" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" Uư đãi các ngày trong tuần"
-                    android:textSize="15dp"
                     android:textColor="@color/colorRed"
-                    />
+                    android:textSize="15dp" />
             </LinearLayout>
+
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
                 <TextView
-                    android:textColor="@color/colorBlack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Đánh giá:"/>
+                    android:text="Đánh giá:"
+                    android:textColor="@color/colorBlack" />
 
                 <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:numStars="5"
-                    android:rating="4.5"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="2dp"
-                    android:progressTint="#FCE903"
-                    style="?android:attr/ratingBarStyleSmall"
                     android:isIndicator="true"
                     android:max="5"
-                    />
+                    android:numStars="5"
+                    android:progressTint="#FCE903"
+                    android:rating="4.5" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/colorXam"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        />
+        android:background="@color/colorXam" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:background="@color/colorWhite"
-        android:paddingLeft="10dp">
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:clickable="true"
+        android:onClick="layoutgannhat2">
+
         <ImageView
             android:layout_width="170dp"
             android:layout_height="120dp"
+            android:clickable="true"
             android:src="@drawable/billiard1"
-            android:clickable="true"
-            android:onClick="clickToDatBanImg"
-            android:id="@id/imgGoiYChoBan"/>
+            android:onClick="layoutgannhat2"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center_vertical"
             android:orientation="vertical"
-            android:paddingLeft="15dp"
-            android:gravity="center_vertical">
+            android:paddingLeft="15dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Billiard HCI Assignment -\nQuận 12 Tô Ký"
-                android:textColor="@color/colorBlack"
-                />
+                android:text="Billiard 27"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-3dp"
+                android:text="Quận 12 Tô Ký"
+                android:textColor="@color/colorBlack" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:src="@drawable/ic_access_time_black_24dp"/>
+                    android:src="@drawable/ic_access_time_black_24dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10 phút nữa - 3.3 km"
-                    android:textColor="@color/colorBlack"/>
+                    android:textColor="@color/colorBlack" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:background="@color/colorWhite">
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/tag"/>
+                    android:src="@drawable/tag" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" Uư đãi các ngày trong tuần"
-                    android:textSize="15dp"
-                    android:textColor="@color/colorRed"/>
+                    android:textColor="@color/colorRed"
+                    android:textSize="15dp" />
             </LinearLayout>
+
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
                 <TextView
-                    android:textColor="@color/colorBlack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Đánh giá:"/>
+                    android:text="Đánh giá:"
+                    android:textColor="@color/colorBlack" />
 
                 <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:numStars="5"
-                    android:rating="4.5"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="2dp"
-                    android:progressTint="#FCE903"
-                    style="?android:attr/ratingBarStyleSmall"
                     android:isIndicator="true"
                     android:max="5"
-                    />
+                    android:numStars="5"
+                    android:progressTint="#FCE903"
+                    android:rating="4.5" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/colorXam"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        />
+        android:background="@color/colorXam" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:background="@color/colorWhite"
-        android:paddingLeft="10dp">
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:clickable="true"
+        android:onClick="layoutgannhat3">
+
         <ImageView
             android:layout_width="170dp"
             android:layout_height="120dp"
-            android:src="@drawable/billiard2"
             android:clickable="true"
-            android:onClick="clickToDatBanImg"
-            android:id="@id/imgGoiYChoBan"/>
+            android:onClick="layoutgannhat3"
+            android:src="@drawable/billiard2" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center_vertical"
             android:orientation="vertical"
-            android:paddingLeft="15dp"
-            android:gravity="center_vertical">
+            android:paddingLeft="15dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Billiard HCI Assignment -\nQuận 12 Tô Ký"
-                android:textColor="@color/colorBlack"
-                />
+                android:text="Billiard Phương"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-3dp"
+                android:text="Quận 12 Tô Ký"
+                android:textColor="@color/colorBlack" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:src="@drawable/ic_access_time_black_24dp"/>
+                    android:src="@drawable/ic_access_time_black_24dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10 phút nữa - 3.3 km"
-                    android:textColor="@color/colorBlack"/>
+                    android:textColor="@color/colorBlack" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:background="@color/colorWhite">
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/tag"/>
+                    android:src="@drawable/tag" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" Uư đãi các ngày trong tuần"
-                    android:textSize="15dp"
-                    android:textColor="@color/colorRed"/>
+                    android:textColor="@color/colorRed"
+                    android:textSize="15dp" />
             </LinearLayout>
+
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
                 <TextView
-                    android:textColor="@color/colorBlack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Đánh giá:"/>
+                    android:text="Đánh giá:"
+                    android:textColor="@color/colorBlack" />
 
                 <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:numStars="5"
-                    android:rating="4.5"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="2dp"
-                    android:progressTint="#FCE903"
-                    style="?android:attr/ratingBarStyleSmall"
                     android:isIndicator="true"
                     android:max="5"
-                    />
+                    android:numStars="5"
+                    android:progressTint="#FCE903"
+                    android:rating="4.5" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/colorXam"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        />
+        android:background="@color/colorXam" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:background="@color/colorWhite"
-        android:paddingLeft="10dp">
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:clickable="true"
+        android:onClick="layoutgannhat4">
+
         <ImageView
             android:layout_width="170dp"
             android:layout_height="120dp"
+            android:clickable="true"
             android:src="@drawable/expensive_billiard1"
-            android:clickable="true"
-            android:onClick="clickToDatBanImg"
-            android:id="@id/imgGoiYChoBan"/>
+            android:onClick="layoutgannhat4"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center_vertical"
             android:orientation="vertical"
-            android:paddingLeft="15dp"
-            android:gravity="center_vertical">
+            android:paddingLeft="15dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Billiard HCI Assignment -\nQuận 12 Tô Ký"
-                android:textColor="@color/colorBlack"
-                />
+                android:text="Billiard Ngôi Sao"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-3dp"
+                android:text="Quận 12 Tô Ký"
+                android:textColor="@color/colorBlack" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:src="@drawable/ic_access_time_black_24dp"/>
+                    android:src="@drawable/ic_access_time_black_24dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10 phút nữa - 3.3 km"
-                    android:textColor="@color/colorBlack"/>
+                    android:textColor="@color/colorBlack" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:background="@color/colorWhite">
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/tag"/>
+                    android:src="@drawable/tag" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" Uư đãi các ngày trong tuần"
-                    android:textSize="15dp"
-                    android:textColor="@color/colorRed"/>
+                    android:textColor="@color/colorRed"
+                    android:textSize="15dp" />
             </LinearLayout>
+
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
                 <TextView
-                    android:textColor="@color/colorBlack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Đánh giá:"/>
+                    android:text="Đánh giá:"
+                    android:textColor="@color/colorBlack" />
 
                 <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:numStars="5"
-                    android:rating="4.5"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="2dp"
-                    android:progressTint="#FCE903"
-                    style="?android:attr/ratingBarStyleSmall"
                     android:isIndicator="true"
                     android:max="5"
-                    />
+                    android:numStars="5"
+                    android:progressTint="#FCE903"
+                    android:rating="4.5" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/colorXam"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        />
+        android:background="@color/colorXam" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:background="@color/colorWhite"
-        android:paddingLeft="10dp">
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:clickable="true"
+        android:onClick="layoutgannhat5">
+
         <ImageView
             android:layout_width="170dp"
             android:layout_height="120dp"
             android:src="@drawable/expensive_billiard2"
             android:clickable="true"
-            android:onClick="clickToDatBanImg"
-            android:id="@id/imgGoiYChoBan"/>
+            android:onClick="layoutgannhat5"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center_vertical"
             android:orientation="vertical"
-            android:paddingLeft="15dp"
-            android:gravity="center_vertical">
+            android:paddingLeft="15dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Billiard HCI Assignment -\nQuận 12 Tô Ký"
-                android:textColor="@color/colorBlack"
-                />
+                android:text="Billiard Lôck"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-3dp"
+                android:text="Biên Hòa - Đồng Nai"
+                android:textColor="@color/colorBlack" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:src="@drawable/ic_access_time_black_24dp"/>
+                    android:src="@drawable/ic_access_time_black_24dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10 phút nữa - 3.3 km"
-                    android:textColor="@color/colorBlack"/>
+                    android:textColor="@color/colorBlack" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:background="@color/colorWhite">
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/tag"/>
+                    android:src="@drawable/tag" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" Uư đãi các ngày trong tuần"
-                    android:textSize="15dp"
-                    android:textColor="@color/colorRed"/>
+                    android:textColor="@color/colorRed"
+                    android:textSize="15dp" />
             </LinearLayout>
+
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
                 <TextView
-                    android:textColor="@color/colorBlack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Đánh giá:"/>
+                    android:text="Đánh giá:"
+                    android:textColor="@color/colorBlack" />
 
                 <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:numStars="5"
-                    android:rating="4.5"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="2dp"
-                    android:progressTint="#FCE903"
-                    style="?android:attr/ratingBarStyleSmall"
                     android:isIndicator="true"
                     android:max="5"
-                    />
+                    android:numStars="5"
+                    android:progressTint="#FCE903"
+                    android:rating="4.5" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

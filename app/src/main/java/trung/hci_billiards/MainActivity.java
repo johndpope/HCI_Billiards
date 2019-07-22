@@ -32,7 +32,8 @@ import com.vorlonsoft.android.rate.StoreType;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    public static final String BILLIARD_NAME = "bida_name";
+    public static final String BILLIARD_ADDRESS = "bida_address";
     private static final String TAG = "MainActivity";
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -52,9 +53,6 @@ public class MainActivity extends AppCompatActivity
                     break;
                 case R.id.navigation_search:
                     selectedFragment = BookingFragment.newInstance();
-                    break;
-                case R.id.navigation_hot_deal:
-                    selectedFragment = HotDealFragment.newInstance();
                     break;
             }
 
@@ -186,12 +184,16 @@ public class MainActivity extends AppCompatActivity
     public void clicktoviewdetailByNear(View view) {
         ImageView imageView = findViewById(R.id.imgDetail);
         Intent intent = new Intent(this, BilliardDetail.class);
+        intent.putExtra(MainActivity.BILLIARD_NAME,"Billiard HCI Assignment");
+        intent.putExtra(MainActivity.BILLIARD_ADDRESS,"Quận 12 Tô Ký");
         startActivity(intent);
     }
 
     public void clickToDatBan(View view) {
         Button button = findViewById(R.id.btnDatBan);
         Intent intent = new Intent(this, DatBan.class);
+        intent.putExtra(MainActivity.BILLIARD_NAME,"Billiard HCI Assignment");
+        intent.putExtra(MainActivity.BILLIARD_ADDRESS,"Quận 12 Tô Ký");
         startActivity(intent);
     }
 
@@ -229,5 +231,66 @@ public class MainActivity extends AppCompatActivity
             // Show a dialog if meets conditions
             AppRate.showRateDialogIfMeetsConditions(MainActivity.this);
         }
+    }
+
+    public void layoutgannhat1(View view) {
+        Intent intent = new Intent(this,DatBan.class);
+        TextView textView = findViewById(R.id.txtNameGanNhat1);
+        TextView textView1 = findViewById(R.id.txtDiaChiGanNhat1);
+        String diachi = textView1.getText().toString();
+        intent.putExtra(BILLIARD_ADDRESS,diachi);
+        String name = textView.getText().toString();
+        intent.putExtra(BILLIARD_NAME,name);
+        startActivity(intent);
+    }
+    public void layoutgannhat2(View view) {
+        Intent intent = new Intent(this,DatBan.class);
+        TextView textView = findViewById(R.id.txtNameGanNhat2);
+        TextView textView1 = findViewById(R.id.txtDiaChiGanNhat2);
+        String diachi = textView1.getText().toString();
+        intent.putExtra(BILLIARD_ADDRESS,diachi);
+        String name = textView.getText().toString();
+        intent.putExtra(BILLIARD_NAME,name);
+        startActivity(intent);
+    }
+    public void layoutgannhat3(View view) {
+        Intent intent = new Intent(this,DatBan.class);
+        TextView textView = findViewById(R.id.txtNameGanNhat3);
+        TextView textView1 = findViewById(R.id.txtDiaChiGanNhat3);
+        String diachi = textView1.getText().toString();
+        intent.putExtra(BILLIARD_ADDRESS,diachi);
+        String name = textView.getText().toString();
+        intent.putExtra(BILLIARD_NAME,name);
+        startActivity(intent);
+    }
+    public void layoutgannhat4(View view) {
+        Intent intent = new Intent(this,DatBan.class);
+        TextView textView = findViewById(R.id.txtNameGanNhat4);
+        TextView textView1 = findViewById(R.id.txtDiaChiGanNhat4);
+        String diachi = textView1.getText().toString();
+        intent.putExtra(BILLIARD_ADDRESS,diachi);
+        String name = textView.getText().toString();
+        intent.putExtra(BILLIARD_NAME,name);
+        startActivity(intent);
+    }
+    public void layoutgannhat5(View view) {
+        Intent intent = new Intent(this,DatBan.class);
+        TextView textView = findViewById(R.id.txtNameGanNhat5);
+        String name = textView.getText().toString();
+        TextView textView1 = findViewById(R.id.txtDiaChiGanNhat5);
+        String diachi = textView1.getText().toString();
+        intent.putExtra(BILLIARD_ADDRESS,diachi);
+        intent.putExtra(BILLIARD_NAME,name);
+        startActivity(intent);
+    }
+    public void layoutgannhat6(View view) {
+        Intent intent = new Intent(this,DatBan.class);
+        TextView textView = findViewById(R.id.txtNameGanNhat6);
+        String name = textView.getText().toString();
+        TextView textView1 = findViewById(R.id.txtDiaChiGanNhat6);
+        String diachi = textView1.getText().toString();
+        intent.putExtra(BILLIARD_ADDRESS,diachi);
+        intent.putExtra(BILLIARD_NAME,name);
+        startActivity(intent);
     }
 }

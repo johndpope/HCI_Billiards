@@ -16,7 +16,6 @@ public class GoiYChoBan extends AppCompatActivity {
     }
 
     public void clickToDatBanImg(View view) {
-        ImageView imageView = findViewById(R.id.imgGoiYChoBan);
         Intent intent = new Intent(this,DatBan.class);
         startActivity(intent);
     }

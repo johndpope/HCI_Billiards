@@ -6,6 +6,7 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +19,7 @@ import com.google.android.material.button.MaterialButton;
  * A simple {@link Fragment} subclass.
  */
 public class BookingFragment extends Fragment {
-
+    private static final String TAG = "BookingFragment";
 
     Button banDangDat, lichSuDatBan;
 
@@ -33,9 +34,13 @@ public class BookingFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_booking_history,container,false);
         banDangDat = view.findViewById(R.id.btnBanDangDat);
+
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
         transaction.replace(R.id.frame_booking_history, new BanDangDatFragment());
         transaction.commit();
+
+        Log.d(TAG, "onCreateView: ");
+
         banDangDat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

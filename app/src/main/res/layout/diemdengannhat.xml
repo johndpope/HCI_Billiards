@@ -13,18 +13,21 @@
         android:orientation="vertical"
         android:paddingLeft="10dp"
         android:paddingRight="3dp"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="10dp"
+        android:id="@+id/layoutGanNhat1"
+        android:clickable="true"
+        android:onClick="layoutgannhat1">
 
         <ImageView
             android:clickable="true"
-            android:onClick="clickToDatBanImg"
             android:id="@+id/imgDiemDenGanNhat"
             android:layout_width="match_parent"
             android:layout_height="110dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/expensive_billiard1" />
+            android:src="@drawable/expensive_billiard1"
+            android:onClick="layoutgannhat1"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,10 +36,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Billiard HCI Assignment - Gr1"
+                android:text="Billiard Kiên Yết"
                 android:textColor="@color/colorBlack"
                 android:textStyle="bold"
                 android:gravity="center"
+                android:id="@+id/txtNameGanNhat1"
                 />
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -50,7 +54,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1230 Tô Ký, Quận 12" />
+                    android:text="1230 Tô Ký, Quận 12"
+                    android:id="@+id/txtDiaChiGanNhat1"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -88,18 +93,21 @@
         android:orientation="vertical"
         android:paddingLeft="3dp"
         android:paddingRight="10dp"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="10dp"
+        android:id="@+id/layoutGanNhat2"
+        android:clickable="true"
+        android:onClick="layoutgannhat2">
 
         <ImageView
-            android:clickable="true"
-            android:onClick="clickToDatBanImg"
             android:id="@id/imgDiemDenGanNhat"
             android:layout_width="match_parent"
             android:layout_height="110dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/expensive_billiard2" />
+            android:src="@drawable/expensive_billiard2"
+            android:clickable="true"
+            android:onClick="layoutgannhat2"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -108,9 +116,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Billiard HCI Assignment - Gr1"
+                android:text="Billiard 27"
                 android:textColor="@color/colorBlack"
                 android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/txtNameGanNhat2"
                 />
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -125,7 +135,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1230 Tô Ký, Quận 12" />
+                    android:text="1230 Tô Ký, Quận 12"
+                    android:id="@+id/txtDiaChiGanNhat2"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -163,17 +174,20 @@
         android:orientation="vertical"
         android:paddingLeft="10dp"
         android:paddingRight="3dp"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="10dp"
+        android:id="@+id/layoutGanNhat3"
+        android:clickable="true"
+        android:onClick="layoutgannhat3">
 
         <ImageView
             android:clickable="true"
-            android:onClick="clickToDatBanImg"
             android:id="@id/imgDiemDenGanNhat"
             android:layout_width="match_parent"
             android:layout_height="110dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
+            android:onClick="layoutgannhat3"
             android:src="@drawable/expensive_billiard3" />
 
         <LinearLayout
@@ -183,10 +197,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Billiard HCI Assignment - Gr1"
+                android:text="Billiard Phương"
                 android:textColor="@color/colorBlack"
                 android:textStyle="bold"
                 android:gravity="center"
+                android:id="@+id/txtNameGanNhat3"
                 />
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -200,7 +215,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1230 Tô Ký, Quận 12" />
+                    android:text="1230 Tô Ký, Quận 12"
+                    android:id="@+id/txtDiaChiGanNhat3"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -236,11 +252,14 @@
         android:gravity="center"
         android:orientation="vertical"
         android:paddingLeft="3dp"
-        android:paddingRight="10dp">
+        android:paddingRight="10dp"
+        android:id="@+id/layoutGanNhat4"
+        android:clickable="true"
+        android:onClick="layoutgannhat4">
 
         <ImageView
+            android:onClick="layoutgannhat4"
             android:clickable="true"
-            android:onClick="clickToDatBanImg"
             android:id="@id/imgDiemDenGanNhat"
             android:layout_width="match_parent"
             android:layout_height="110dp"
@@ -256,9 +275,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Billiard HCI Assignment - Gr1"
+                android:text="Billiard Ngôi Sao"
                 android:textColor="@color/colorBlack"
                 android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/txtNameGanNhat4"
                 />
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -273,7 +294,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1230 Tô Ký, Quận 12" />
+                    android:text="1230 Tô Ký, Quận 12"
+                    android:id="@+id/txtDiaChiGanNhat4"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -310,11 +332,14 @@
         android:gravity="center"
         android:orientation="vertical"
         android:paddingLeft="10dp"
-        android:paddingRight="3dp">
+        android:paddingRight="3dp"
+        android:id="@+id/layoutGanNhat5"
+        android:clickable="true"
+        android:onClick="layoutgannhat5">
 
         <ImageView
+            android:onClick="layoutgannhat5"
             android:clickable="true"
-            android:onClick="clickToDatBanImg"
             android:id="@id/imgDiemDenGanNhat"
             android:layout_width="match_parent"
             android:layout_height="110dp"
@@ -330,10 +355,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Billiard HCI Assignment - Gr1"
+                android:text="Billiard Lộc"
                 android:textColor="@color/colorBlack"
                 android:textStyle="bold"
                 android:gravity="center"
+                android:id="@+id/txtNameGanNhat5"
                 />
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -347,7 +373,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1230 Tô Ký, Quận 12" />
+                    android:text="Biên Hòa - Đồng Nai"
+                    android:id="@+id/txtDiaChiGanNhat5"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -383,11 +410,14 @@
         android:gravity="center"
         android:orientation="vertical"
         android:paddingLeft="3dp"
-        android:paddingRight="10dp">
+        android:paddingRight="10dp"
+        android:id="@+id/layoutGanNhat6"
+        android:clickable="true"
+        android:onClick="layoutgannhat6">
 
         <ImageView
+            android:onClick="layoutgannhat6"
             android:clickable="true"
-            android:onClick="clickToDatBanImg"
             android:id="@id/imgDiemDenGanNhat"
             android:layout_width="match_parent"
             android:layout_height="110dp"
@@ -403,9 +433,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Billiard HCI Assignment - Gr1"
+                android:text="Billiard 259 Club"
                 android:textColor="@color/colorBlack"
                 android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/txtNameGanNhat6"
                 />
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -420,7 +452,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1230 Tô Ký, Quận 12" />
+                    android:text="1230 Tô Ký, Quận 12"
+                    android:id="@+id/txtDiaChiGanNhat6"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"

@@ -52,12 +52,12 @@
             android:value="@string/google_maps_key" />
 
         <activity android:name=".GoiYChoBan" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".BookTable" />
         <activity android:name=".BilliardDetail" />
         <activity android:name=".ListBilliards" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".DatBan">
+        <activity android:name=".DatBan" />
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

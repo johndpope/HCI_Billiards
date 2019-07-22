@@ -31,7 +31,7 @@
                 android:src="@drawable/expensive_billiard6"
                 android:id="@id/imgDetail"
                 android:clickable="true"
-                android:onClick="clicktoviewdetailByNear"/>
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -130,7 +130,7 @@
                 android:src="@drawable/expensive_billiard2"
                 android:id="@id/imgDetail"
                 android:clickable="true"
-                android:onClick="clicktoviewdetailByNear"/>
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -229,7 +229,7 @@
                 android:src="@drawable/expensive_billiard3"
                 android:id="@id/imgDetail"
                 android:clickable="true"
-                android:onClick="clicktoviewdetailByNear"/>
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -328,7 +328,7 @@
                 android:src="@drawable/expensive_billiard1"
                 android:id="@id/imgDetail"
                 android:clickable="true"
-                android:onClick="clicktoviewdetailByNear"/>
+                />
         </LinearLayout>
 
         <LinearLayout

@@ -18,12 +18,14 @@
         android:textColor="@color/colorBlack"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtNameDetail"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Số 814A Nguyễn Văn Qúa, P. Đông Hưng Thuận, Q. 12"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:id="@+id/txtDiaChiDetail"/>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"

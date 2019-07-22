@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
-    android:paddingTop="10dp">
+    android:paddingTop="10dp"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +32,7 @@
                 android:layout_alignParentTop="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/expensive_billiard6"
-                android:id="@id/imgDetail"
+                android:onClick="clickToShowToask"
                 />
         </LinearLayout>
 
@@ -46,9 +49,16 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Billiard HCI Assignment -\nQuận 12 Tô Ký"
+                    android:text="Billiard Kiên Yết"
                     android:textColor="@color/colorBlack"
-                    />
+                    android:id="@+id/txtBanDangDatName"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quận 12 Tô Ký"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="-3dp"
+                    android:id="@+id/txtBanDangDatAddress"/>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

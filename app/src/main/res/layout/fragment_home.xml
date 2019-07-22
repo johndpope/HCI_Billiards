@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <include layout="@layout/search_billiards"/>
+        <!--<include layout="@layout/search_billiards"/>-->
         <include layout="@layout/popular_billiards"/>
         <TextView
             android:layout_width="fill_parent"

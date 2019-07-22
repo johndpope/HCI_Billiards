@@ -35,13 +35,24 @@ public class DatBan extends AppCompatActivity {
     private static final String BIDA_LO = "Bida Lỗ";
     String chonban ="";
     Dialog dialog;
-    TextView txtLoaiBan;
+    TextView txtLoaiBan,txtNameDatBan, txtDiachi;
     Button datbanngay;
+    String name,diachi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dat_ban);
+        txtDiachi = findViewById(R.id.txtDiaChiDatBan);
+        txtNameDatBan = findViewById(R.id.txtNameDatBan);
+
+        Intent intent = getIntent();
+        name = intent.getStringExtra(MainActivity.BILLIARD_NAME);
+        diachi = intent.getStringExtra(MainActivity.BILLIARD_ADDRESS);
+
+        txtNameDatBan.setText(name);
+        txtDiachi.setText(diachi);
+
         imgDateBack = findViewById(R.id.imgDateBack);
         imgDateNext = findViewById(R.id.imgDateNext);
         textView_date = findViewById(R.id.txtSetDate);
@@ -173,6 +184,8 @@ public class DatBan extends AppCompatActivity {
     public void clickToXemThemThongTin(View view) {
         TextView textView = findViewById(R.id.txtXemThemThongTin);
         Intent intent = new Intent(this,BilliardDetail.class);
+        intent.putExtra(MainActivity.BILLIARD_NAME,name);
+        intent.putExtra(MainActivity.BILLIARD_ADDRESS,diachi);
         startActivity(intent);
     }
 
@@ -268,7 +281,8 @@ public class DatBan extends AppCompatActivity {
         Log.d(TAG, "clickToDatBanNgay: " +  "dat ban");
         if (chonban.length()>0){
             Intent intent = new Intent(DatBan.this, BanDangDatActivity.class);
-
+            intent.putExtra(MainActivity.BILLIARD_NAME,name);
+            intent.putExtra(MainActivity.BILLIARD_ADDRESS,diachi);
             intent.putExtra(NGAY_DEN,ngayDen);
             intent.putExtra(GIO_DEN,chonban);
             intent.putExtra(LOAI_BAN,loaiBan);
